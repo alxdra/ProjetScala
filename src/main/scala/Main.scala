@@ -3,10 +3,9 @@ import scala.io.Source
 object Main extends App {
  //TODO 
  //Gestion des exeptions à l'ouverture du fichier ? 
- //Gestion si le séparateur n'est pas une virgule ?
- //Gestion si charactères ? 
+ //Gestion si le séparateur n'est pas une virgule ? -> dans point
+ //Gestion si charactères ? -> fait dans point
 
-  
   //Open file and get content 
   val bufferedSource = Source.fromFile("points.csv")
   val fileList = bufferedSource.getLines.toList

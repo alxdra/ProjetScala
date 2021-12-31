@@ -88,3 +88,22 @@ Caused by: java.lang.IllegalArgumentException: 7 is not a valid line number, all
 [0m2021.12.30 15:01:30 WARN  no build target for: C:\Users\alexa\Documents\EFREI\S9\Scala\ProjetScala\src\main\scala\Main.scala[0m
 [0m2021.12.30 15:01:40 WARN  no build target for: C:\Users\alexa\Documents\EFREI\S9\Scala\ProjetScala\src\main\scala\Main.scala[0m
 [0m2021.12.30 15:07:30 INFO  shutting down Metals[0m
+[0m2021.12.30 15:08:03 INFO  Started: Metals version 0.10.9 in workspace 'C:\Users\alexa\Documents\EFREI\S9\Scala\ProjetScala' for client Visual Studio Code 1.63.2.[0m
+[0m2021.12.30 15:08:06 INFO  time: initialize in 3.14s[0m
+[0m2021.12.30 15:08:07 WARN  Build server is not auto-connectable.[0m
+[0m2021.12.30 15:08:07 WARN  no build target for: C:\Users\alexa\Documents\EFREI\S9\Scala\ProjetScala\src\main\scala\Main.scala[0m
+[0m2021.12.30 15:08:08 INFO  skipping build import with status 'Requested'[0m
+[0m2021.12.30 15:08:18 INFO  no build target: using presentation compiler with only scala-library: 3.1.0[0m
+[0m2021.12.30 15:08:23 INFO  time: code lens generation in 11s[0m
+[0m2021.12.30 15:08:23 INFO  time: code lens generation in 4.79s[0m
+[0m2021.12.30 15:08:23 INFO  time: code lens generation in 4.08s[0m
+[0m2021.12.30 15:08:23 INFO  time: code lens generation in 10s[0m
+[0m2021.12.30 15:08:23 INFO  time: code lens generation in 14s[0m
+[0m2021.12.30 15:24:41 INFO  shutting down Metals[0m
+[0m2021.12.31 11:03:09 INFO  Started: Metals version 0.10.9 in workspace 'C:\Users\alexa\Documents\EFREI\S9\Scala\ProjetScala' for client Visual Studio Code 1.63.2.[0m
+[0m2021.12.31 11:03:10 INFO  time: initialize in 1.56s[0m
+[0m2021.12.31 11:03:11 WARN  Build server is not auto-connectable.[0m
+[0m2021.12.31 11:03:11 WARN  no build target for: C:\Users\alexa\Documents\EFREI\S9\Scala\ProjetScala\src\main\scala\Main.scala[0m
+[0m2021.12.31 11:03:11 INFO  skipping build import with status 'Requested'[0m
+[0m2021.12.31 11:03:17 INFO  no build target: using presentation compiler with only scala-library: 3.1.0[0m
+[0m2021.12.31 11:03:21 INFO  time: code lens generation in 9.6s[0m
