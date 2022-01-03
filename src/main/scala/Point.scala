@@ -5,12 +5,16 @@ case class Point2D(x: Float, y:Float) extends Point
 case class Point3D(x:Float, y :Float, z:Float) extends Point
 
 object Point{
-    def fromCSV(lines : Array[String]): Option[Point] = {
+    def fromCSV(lines : Array[Either[NumberFormatException,Float]]): Either[String, Point] = {
         lines
              match{
-                case Array(x,y,z) => Some(Point3D(x.toFloat, y.toFloat, z.toFloat))
-                case Array(x,y) => Some(Point2D(x.toFloat, y.toFloat))
-                case _ => None
+                case Array(Right(x),Right(y),Right(z)) => Right(Point3D(x, y, z))
+                case Array(Right(x),Right(y)) => Right(Point2D(x.toFloat, y.toFloat))
+                case _ => Left("Error")
             }
     }
+    
+   
 }
+//Verif si x, y, z sont bien des float
+
