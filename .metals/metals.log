@@ -123,3 +123,10 @@ Caused by: java.lang.IllegalArgumentException: 7 is not a valid line number, all
 [0m2022.01.03 13:46:53 INFO  skipping build import with status 'Requested'[0m
 [0m2022.01.03 13:47:08 INFO  no build target: using presentation compiler with only scala-library: 3.1.0[0m
 [0m2022.01.03 13:47:17 INFO  time: code lens generation in 23s[0m
+[0m2022.01.03 13:50:53 WARN  no build target for: C:\Users\alexa\Documents\EFREI\S9\Scala\ProjetScala\src\main\scala\Point2.scala[0m
+[0m2022.01.03 13:51:03 WARN  no build target for: C:\Users\alexa\Documents\EFREI\S9\Scala\ProjetScala\src\main\scala\Point.scala[0m
+[0m2022.01.03 14:10:30 WARN  no build target for: C:\Users\alexa\Documents\EFREI\S9\Scala\ProjetScala\src\main\scala\Point.scala[0m
+[0m2022.01.03 14:11:57 WARN  no build target for: C:\Users\alexa\Documents\EFREI\S9\Scala\ProjetScala\src\main\scala\Point.scala[0m
+[0m2022.01.03 14:15:42 WARN  no build target for: C:\Users\alexa\Documents\EFREI\S9\Scala\exopoint\src\main\scala\Fruit.scala[0m
+[0m2022.01.03 14:18:03 WARN  no build target for: C:\Users\alexa\Documents\EFREI\S9\Scala\ProjetScala\src\main\scala\Point.scala[0m
+[0m2022.01.03 14:18:19 WARN  no build target for: C:\Users\alexa\Documents\EFREI\S9\Scala\ProjetScala\src\main\scala\Point.scala[0m

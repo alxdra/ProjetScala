@@ -1,19 +1,23 @@
+import Point.fromCSV
 import scala.io.Source
-
 object Main extends App {
- //TODO 
- //Gestion des exeptions à l'ouverture du fichier ? 
- //Gestion si le séparateur n'est pas une virgule ? -> dans point
- //Gestion si charactères ? -> fait dans point
+  val listofpoint = readCSV("points.cvs")
 
-  //Open file and get content 
-  val bufferedSource = Source.fromFile("points.csv")
-  val fileList = bufferedSource.getLines.toList
+  println(listofpoint) 
+
+  def readCSV(fileName :String) : List[Option[Point]] = {
+    val bufferedSource = Source.fromFile("points.csv")
+    val fileList = bufferedSource.getLines
+      .toList
+          .map(_.split(",").map(_.trim))           
+          .map(fromCSV)  
   
-  //Create List of points
-  val ListOfPoints = fileList.map(s => Point.apply(s))
-  ListOfPoints.foreach(println)
-
   //Close the file
-  bufferedSource.close
+    bufferedSource.close
+
+    return fileList
+  }
+
 }
+
+ 
