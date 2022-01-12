@@ -4,9 +4,11 @@ import scala.io.Source
 object Main extends App {
   val listofpoint = readCSV("points.cvs", fromCSV)
  
-  println(listofpoint) 
+  println(listofpoint)
 
-  def readCSV[T](fileName :String, fonctionObject : Array[Either[NumberFormatException,Float]]=> Either[String,T]) : List[ Either[String,T]] = {
+  def readCSV[T](fileName :String, 
+                fonctionObject : Array[Either[NumberFormatException,Float]]=> Either[String,T]
+                )  : List[ Either[String,T]] = {
     val bufferedSource = Source.fromFile("points.csv")
 
     val fileList = bufferedSource.getLines
@@ -16,7 +18,6 @@ object Main extends App {
                  
   //Close the file
     bufferedSource.close
-
     return fileList
   }
 
@@ -27,7 +28,6 @@ object Main extends App {
     case ex: NumberFormatException => Left(ex)
     }
   }
-
 }
 
  

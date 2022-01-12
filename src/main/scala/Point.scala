@@ -9,12 +9,10 @@ object Point{
         lines
              match{
                 case Array(Right(x),Right(y),Right(z)) => Right(Point3D(x, y, z))
-                case Array(Right(x),Right(y)) => Right(Point2D(x.toFloat, y.toFloat))
+                case Array(Right(x),Right(y)) => Right(Point2D(x, y))
                 case _ => Left("Error")
             }
     }
-    
-   
 }
 //Verif si x, y, z sont bien des float
 

@@ -343,3 +343,440 @@ AVERTISSEMENT: Unmatched cancel notification for request id 6556
 [0m2022.01.03 16:12:12 WARN  no build target for: C:\Users\alexa\Documents\EFREI\S9\Scala\ProjetScala\src\main\scala\Main.scala[0m
 [0m2022.01.03 16:12:24 WARN  no build target for: C:\Users\alexa\Documents\EFREI\S9\Scala\ProjetScala\src\main\scala\Main.scala[0m
 [0m2022.01.03 16:12:32 WARN  no build target for: C:\Users\alexa\Documents\EFREI\S9\Scala\ProjetScala\src\main\scala\Main.scala[0m
+[0m2022.01.03 16:15:53 WARN  no build target for: C:\Users\alexa\Documents\EFREI\S9\Scala\ProjetScala\src\main\scala\Point.scala[0m
+[0m2022.01.03 16:15:55 WARN  no build target for: C:\Users\alexa\Documents\EFREI\S9\Scala\ProjetScala\src\main\scala\Main.scala[0m
+janv. 03, 2022 4:18:13 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+AVERTISSEMENT: Unmatched cancel notification for request id 6692
+[0m2022.01.03 16:20:24 WARN  no build target for: C:\Users\alexa\Documents\EFREI\S9\Scala\ProjetScala\src\main\scala\Point.scala[0m
+[0m2022.01.03 16:20:43 WARN  no build target for: C:\Users\alexa\Documents\EFREI\S9\Scala\ProjetScala\src\main\scala\Point.scala[0m
+[0m2022.01.03 16:22:23 WARN  no build target for: C:\Users\alexa\Documents\EFREI\S9\Scala\ProjetScala\src\main\scala\Point.scala[0m
+[0m2022.01.03 16:23:43 WARN  no build target for: C:\Users\alexa\Documents\EFREI\S9\Scala\ProjetScala\src\main\scala\Point.scala[0m
+[0m2022.01.03 16:24:31 WARN  no build target for: C:\Users\alexa\Documents\EFREI\S9\Scala\ProjetScala\src\main\scala\Main.scala[0m
+[0m2022.01.03 16:24:55 WARN  no build target for: C:\Users\alexa\Documents\EFREI\S9\Scala\ProjetScala\src\main\scala\Point.scala[0m
+[0m2022.01.03 16:25:12 WARN  no build target for: C:\Users\alexa\Documents\EFREI\S9\Scala\ProjetScala\src\main\scala\Point.scala[0m
+[0m2022.01.03 16:26:50 WARN  no build target for: C:\Users\alexa\Documents\EFREI\S9\Scala\ProjetScala\src\main\scala\Main.scala[0m
+[0m2022.01.03 16:30:59 WARN  no build target for: C:\Users\alexa\Documents\EFREI\S9\Scala\ProjetScala\src\main\scala\Point.scala[0m
+[0m2022.01.03 16:44:53 WARN  no build target for: C:\Users\alexa\Documents\EFREI\S9\Scala\ProjetScala\src\main\scala\Point.scala[0m
+janv. 03, 2022 4:48:43 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint fallbackResponseError
+GRAVE: Internal error: java.lang.reflect.InvocationTargetException
+java.lang.RuntimeException: java.lang.reflect.InvocationTargetException
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.lambda$null$0(GenericEndpoint.java:67)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.request(GenericEndpoint.java:120)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleRequest(RemoteEndpoint.java:261)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.consume(RemoteEndpoint.java:190)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:194)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:94)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:113)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+Caused by: java.lang.reflect.InvocationTargetException
+	at jdk.internal.reflect.GeneratedMethodAccessor5.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.lambda$null$0(GenericEndpoint.java:65)
+	... 11 more
+Caused by: java.lang.IllegalArgumentException: 26 is not a valid line number, allowed [0..25]
+	at scala.meta.internal.inputs.InternalInput.lineToOffset(InternalInput.scala:37)
+	at scala.meta.internal.inputs.InternalInput.lineToOffset$(InternalInput.scala:32)
+	at scala.meta.inputs.Input$VirtualFile.lineToOffset(Input.scala:80)
+	at scala.meta.inputs.Position$Range$.apply(Position.scala:59)
+	at scala.meta.internal.mtags.MtagsEnrichments$XtensionPositionLspInverse.toMeta(MtagsEnrichments.scala:133)
+	at scala.meta.internal.parsing.Trees.$anonfun$findLastEnclosingAt$4(Trees.scala:77)
+	at scala.Option.flatMap(Option.scala:271)
+	at scala.meta.internal.parsing.Trees.findLastEnclosingAt(Trees.scala:76)
+	at scala.meta.internal.metals.codeactions.PatternMatchRefactor.contribute(PatternMatchRefactor.scala:96)
+	at scala.meta.internal.metals.CodeActionProvider$$anonfun$1.applyOrElse(CodeActionProvider.scala:62)
+	at scala.meta.internal.metals.CodeActionProvider$$anonfun$1.applyOrElse(CodeActionProvider.scala:61)
+	at scala.collection.immutable.List.collect(List.scala:323)
+	at scala.meta.internal.metals.CodeActionProvider.codeActions(CodeActionProvider.scala:61)
+	at scala.meta.internal.metals.MetalsLanguageServer.$anonfun$codeAction$1(MetalsLanguageServer.scala:1555)
+	at scala.meta.internal.metals.CancelTokens$.future(CancelTokens.scala:38)
+	at scala.meta.internal.metals.MetalsLanguageServer.codeAction(MetalsLanguageServer.scala:1554)
+	... 15 more
+
+[0m2022.01.03 16:51:01 WARN  no build target for: C:\Users\alexa\Documents\EFREI\S9\Scala\ProjetScala\src\main\scala\Point.scala[0m
+[0m2022.01.03 16:51:25 WARN  no build target for: C:\Users\alexa\Documents\EFREI\S9\Scala\ProjetScala\src\main\scala\Point.scala[0m
+Exception in thread "pool-3-thread-2" dotty.tools.dotc.core.TypeError: Toplevel definition <init> is defined in
+  C:\Users\alexa\Documents\EFREI\S9\Scala\ProjetScala\src\main\scala\Main.scala
+and also in
+  C:\Users\alexa\Documents\EFREI\S9\Scala\ProjetScala\src\main\scala\Point.scala
+One of these files should be removed from the classpath.
+	at dotty.tools.dotc.core.SymDenotations$PackageClassDenotation.dropStale$1(SymDenotations.scala:2439)
+	at dotty.tools.dotc.core.SymDenotations$PackageClassDenotation.recur$1(SymDenotations.scala:2403)
+	at dotty.tools.dotc.core.SymDenotations$PackageClassDenotation.computeMembersNamed(SymDenotations.scala:2459)
+	at dotty.tools.dotc.core.SymDenotations$ClassDenotation.membersNamed(SymDenotations.scala:2012)
+	at dotty.tools.dotc.core.SymDenotations$ClassDenotation.findMember(SymDenotations.scala:2063)
+	at dotty.tools.dotc.core.Types$Type.go$1(Types.scala:683)
+	at dotty.tools.dotc.core.Types$Type.goThis$1(Types.scala:807)
+	at dotty.tools.dotc.core.Types$Type.go$1(Types.scala:700)
+	at dotty.tools.dotc.core.Types$Type.findMember(Types.scala:870)
+	at dotty.tools.dotc.core.Types$Type.memberBasedOnFlags(Types.scala:666)
+	at dotty.tools.dotc.core.Types$Type.member(Types.scala:650)
+	at dotty.tools.dotc.core.Types$Type.allMembers$$anonfun$1(Types.scala:1011)
+	at scala.runtime.function.JProcedure2.apply(JProcedure2.java:15)
+	at scala.runtime.function.JProcedure2.apply(JProcedure2.java:10)
+	at dotty.tools.dotc.core.Types$Type.memberDenots$$anonfun$1(Types.scala:916)
+	at scala.runtime.function.JProcedure1.apply(JProcedure1.java:15)
+	at scala.runtime.function.JProcedure1.apply(JProcedure1.java:10)
+	at scala.collection.immutable.BitmapIndexedSetNode.foreach(HashSet.scala:937)
+	at scala.collection.immutable.HashSet.foreach(HashSet.scala:944)
+	at dotty.tools.dotc.core.Types$Type.memberDenots(Types.scala:916)
+	at dotty.tools.dotc.core.Types$Type.allMembers(Types.scala:1011)
+	at scala.meta.internal.pc.IndexedContext$.accesibleMembers$1(IndexedContext.scala:127)
+	at scala.meta.internal.pc.IndexedContext$.scala$meta$internal$pc$IndexedContext$$$extractNames(IndexedContext.scala:184)
+	at scala.meta.internal.pc.IndexedContext$LazyWrapper.<init>(IndexedContext.scala:77)
+	at scala.meta.internal.pc.IndexedContext$.apply(IndexedContext.scala:65)
+	at scala.meta.internal.pc.IndexedContext$LazyWrapper.<init>(IndexedContext.scala:76)
+	at scala.meta.internal.pc.IndexedContext$.apply(IndexedContext.scala:65)
+	at scala.meta.internal.pc.IndexedContext$LazyWrapper.<init>(IndexedContext.scala:76)
+	at scala.meta.internal.pc.IndexedContext$.apply(IndexedContext.scala:65)
+	at scala.meta.internal.pc.IndexedContext$LazyWrapper.<init>(IndexedContext.scala:76)
+	at scala.meta.internal.pc.IndexedContext$.apply(IndexedContext.scala:65)
+	at scala.meta.internal.pc.IndexedContext$LazyWrapper.<init>(IndexedContext.scala:76)
+	at scala.meta.internal.pc.IndexedContext$.apply(IndexedContext.scala:65)
+	at scala.meta.internal.pc.IndexedContext$LazyWrapper.<init>(IndexedContext.scala:76)
+	at scala.meta.internal.pc.IndexedContext$.apply(IndexedContext.scala:65)
+	at scala.meta.internal.pc.IndexedContext$LazyWrapper.<init>(IndexedContext.scala:76)
+	at scala.meta.internal.pc.IndexedContext$.apply(IndexedContext.scala:65)
+	at scala.meta.internal.pc.IndexedContext$LazyWrapper.<init>(IndexedContext.scala:76)
+	at scala.meta.internal.pc.IndexedContext$.apply(IndexedContext.scala:65)
+	at scala.meta.internal.pc.ScalaPresentationCompiler.$anonfun$9(ScalaPresentationCompiler.scala:335)
+	at scala.Option.map(Option.scala:242)
+	at scala.meta.internal.pc.ScalaPresentationCompiler.hover$$anonfun$1(ScalaPresentationCompiler.scala:341)
+	at scala.meta.internal.pc.CompilerAccess.withSharedCompiler(CompilerAccess.scala:137)
+	at scala.meta.internal.pc.CompilerAccess.withNonInterruptableCompiler$$anonfun$1(CompilerAccess.scala:125)
+	at scala.meta.internal.pc.CompilerAccess.onCompilerJobQueue$$anonfun$1(CompilerAccess.scala:197)
+	at scala.meta.internal.pc.CompilerJobQueue$Job.run(CompilerJobQueue.scala:139)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+Exception in thread "pool-3-thread-3" dotty.tools.dotc.core.TypeError: Toplevel definition <init> is defined in
+  C:\Users\alexa\Documents\EFREI\S9\Scala\ProjetScala\src\main\scala\Main.scala
+and also in
+  C:\Users\alexa\Documents\EFREI\S9\Scala\ProjetScala\src\main\scala\Point.scala
+One of these files should be removed from the classpath.
+	at dotty.tools.dotc.core.SymDenotations$PackageClassDenotation.dropStale$1(SymDenotations.scala:2439)
+	at dotty.tools.dotc.core.SymDenotations$PackageClassDenotation.recur$1(SymDenotations.scala:2403)
+	at dotty.tools.dotc.core.SymDenotations$PackageClassDenotation.computeMembersNamed(SymDenotations.scala:2459)
+	at dotty.tools.dotc.core.SymDenotations$ClassDenotation.membersNamed(SymDenotations.scala:2012)
+	at dotty.tools.dotc.core.SymDenotations$ClassDenotation.findMember(SymDenotations.scala:2063)
+	at dotty.tools.dotc.core.Types$Type.go$1(Types.scala:683)
+	at dotty.tools.dotc.core.Types$Type.goThis$1(Types.scala:807)
+	at dotty.tools.dotc.core.Types$Type.go$1(Types.scala:700)
+	at dotty.tools.dotc.core.Types$Type.findMember(Types.scala:870)
+	at dotty.tools.dotc.core.Types$Type.memberBasedOnFlags(Types.scala:666)
+	at dotty.tools.dotc.core.Types$Type.member(Types.scala:650)
+	at dotty.tools.dotc.core.Types$Type.allMembers$$anonfun$1(Types.scala:1011)
+	at scala.runtime.function.JProcedure2.apply(JProcedure2.java:15)
+	at scala.runtime.function.JProcedure2.apply(JProcedure2.java:10)
+	at dotty.tools.dotc.core.Types$Type.memberDenots$$anonfun$1(Types.scala:916)
+	at scala.runtime.function.JProcedure1.apply(JProcedure1.java:15)
+	at scala.runtime.function.JProcedure1.apply(JProcedure1.java:10)
+	at scala.collection.immutable.BitmapIndexedSetNode.foreach(HashSet.scala:937)
+	at scala.collection.immutable.HashSet.foreach(HashSet.scala:944)
+	at dotty.tools.dotc.core.Types$Type.memberDenots(Types.scala:916)
+	at dotty.tools.dotc.core.Types$Type.allMembers(Types.scala:1011)
+	at scala.meta.internal.pc.IndexedContext$.accesibleMembers$1(IndexedContext.scala:127)
+	at scala.meta.internal.pc.IndexedContext$.scala$meta$internal$pc$IndexedContext$$$extractNames(IndexedContext.scala:184)
+	at scala.meta.internal.pc.IndexedContext$LazyWrapper.<init>(IndexedContext.scala:77)
+	at scala.meta.internal.pc.IndexedContext$.apply(IndexedContext.scala:65)
+	at scala.meta.internal.pc.IndexedContext$LazyWrapper.<init>(IndexedContext.scala:76)
+	at scala.meta.internal.pc.IndexedContext$.apply(IndexedContext.scala:65)
+	at scala.meta.internal.pc.IndexedContext$LazyWrapper.<init>(IndexedContext.scala:76)
+	at scala.meta.internal.pc.IndexedContext$.apply(IndexedContext.scala:65)
+	at scala.meta.internal.pc.IndexedContext$LazyWrapper.<init>(IndexedContext.scala:76)
+	at scala.meta.internal.pc.IndexedContext$.apply(IndexedContext.scala:65)
+	at scala.meta.internal.pc.IndexedContext$LazyWrapper.<init>(IndexedContext.scala:76)
+	at scala.meta.internal.pc.IndexedContext$.apply(IndexedContext.scala:65)
+	at scala.meta.internal.pc.IndexedContext$LazyWrapper.<init>(IndexedContext.scala:76)
+	at scala.meta.internal.pc.IndexedContext$.apply(IndexedContext.scala:65)
+	at scala.meta.internal.pc.ScalaPresentationCompiler.$anonfun$9(ScalaPresentationCompiler.scala:335)
+	at scala.Option.map(Option.scala:242)
+	at scala.meta.internal.pc.ScalaPresentationCompiler.hover$$anonfun$1(ScalaPresentationCompiler.scala:341)
+	at scala.meta.internal.pc.CompilerAccess.withSharedCompiler(CompilerAccess.scala:137)
+	at scala.meta.internal.pc.CompilerAccess.withNonInterruptableCompiler$$anonfun$1(CompilerAccess.scala:125)
+	at scala.meta.internal.pc.CompilerAccess.onCompilerJobQueue$$anonfun$1(CompilerAccess.scala:197)
+	at scala.meta.internal.pc.CompilerJobQueue$Job.run(CompilerJobQueue.scala:139)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+Exception in thread "pool-3-thread-4" dotty.tools.dotc.core.TypeError: Toplevel definition <init> is defined in
+  C:\Users\alexa\Documents\EFREI\S9\Scala\ProjetScala\src\main\scala\Main.scala
+and also in
+  C:\Users\alexa\Documents\EFREI\S9\Scala\ProjetScala\src\main\scala\Point.scala
+One of these files should be removed from the classpath.
+	at dotty.tools.dotc.core.SymDenotations$PackageClassDenotation.dropStale$1(SymDenotations.scala:2439)
+	at dotty.tools.dotc.core.SymDenotations$PackageClassDenotation.recur$1(SymDenotations.scala:2403)
+	at dotty.tools.dotc.core.SymDenotations$PackageClassDenotation.computeMembersNamed(SymDenotations.scala:2459)
+	at dotty.tools.dotc.core.SymDenotations$ClassDenotation.membersNamed(SymDenotations.scala:2012)
+	at dotty.tools.dotc.core.SymDenotations$ClassDenotation.findMember(SymDenotations.scala:2063)
+	at dotty.tools.dotc.core.Types$Type.go$1(Types.scala:683)
+	at dotty.tools.dotc.core.Types$Type.goThis$1(Types.scala:807)
+	at dotty.tools.dotc.core.Types$Type.go$1(Types.scala:700)
+	at dotty.tools.dotc.core.Types$Type.findMember(Types.scala:870)
+	at dotty.tools.dotc.core.Types$Type.memberBasedOnFlags(Types.scala:666)
+	at dotty.tools.dotc.core.Types$Type.member(Types.scala:650)
+	at dotty.tools.dotc.core.Types$Type.allMembers$$anonfun$1(Types.scala:1011)
+	at scala.runtime.function.JProcedure2.apply(JProcedure2.java:15)
+	at scala.runtime.function.JProcedure2.apply(JProcedure2.java:10)
+	at dotty.tools.dotc.core.Types$Type.memberDenots$$anonfun$1(Types.scala:916)
+	at scala.runtime.function.JProcedure1.apply(JProcedure1.java:15)
+	at scala.runtime.function.JProcedure1.apply(JProcedure1.java:10)
+	at scala.collection.immutable.BitmapIndexedSetNode.foreach(HashSet.scala:937)
+	at scala.collection.immutable.HashSet.foreach(HashSet.scala:944)
+	at dotty.tools.dotc.core.Types$Type.memberDenots(Types.scala:916)
+	at dotty.tools.dotc.core.Types$Type.allMembers(Types.scala:1011)
+	at scala.meta.internal.pc.IndexedContext$.accesibleMembers$1(IndexedContext.scala:127)
+	at scala.meta.internal.pc.IndexedContext$.scala$meta$internal$pc$IndexedContext$$$extractNames(IndexedContext.scala:184)
+	at scala.meta.internal.pc.IndexedContext$LazyWrapper.<init>(IndexedContext.scala:77)
+	at scala.meta.internal.pc.IndexedContext$.apply(IndexedContext.scala:65)
+	at scala.meta.internal.pc.IndexedContext$LazyWrapper.<init>(IndexedContext.scala:76)
+	at scala.meta.internal.pc.IndexedContext$.apply(IndexedContext.scala:65)
+	at scala.meta.internal.pc.IndexedContext$LazyWrapper.<init>(IndexedContext.scala:76)
+	at scala.meta.internal.pc.IndexedContext$.apply(IndexedContext.scala:65)
+	at scala.meta.internal.pc.IndexedContext$LazyWrapper.<init>(IndexedContext.scala:76)
+	at scala.meta.internal.pc.IndexedContext$.apply(IndexedContext.scala:65)
+	at scala.meta.internal.pc.IndexedContext$LazyWrapper.<init>(IndexedContext.scala:76)
+	at scala.meta.internal.pc.IndexedContext$.apply(IndexedContext.scala:65)
+	at scala.meta.internal.pc.IndexedContext$LazyWrapper.<init>(IndexedContext.scala:76)
+	at scala.meta.internal.pc.IndexedContext$.apply(IndexedContext.scala:65)
+	at scala.meta.internal.pc.ScalaPresentationCompiler.$anonfun$9(ScalaPresentationCompiler.scala:335)
+	at scala.Option.map(Option.scala:242)
+	at scala.meta.internal.pc.ScalaPresentationCompiler.hover$$anonfun$1(ScalaPresentationCompiler.scala:341)
+	at scala.meta.internal.pc.CompilerAccess.withSharedCompiler(CompilerAccess.scala:137)
+	at scala.meta.internal.pc.CompilerAccess.withNonInterruptableCompiler$$anonfun$1(CompilerAccess.scala:125)
+	at scala.meta.internal.pc.CompilerAccess.onCompilerJobQueue$$anonfun$1(CompilerAccess.scala:197)
+	at scala.meta.internal.pc.CompilerJobQueue$Job.run(CompilerJobQueue.scala:139)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+Exception in thread "pool-3-thread-5" dotty.tools.dotc.core.TypeError: Toplevel definition <init> is defined in
+  C:\Users\alexa\Documents\EFREI\S9\Scala\ProjetScala\src\main\scala\Main.scala
+and also in
+  C:\Users\alexa\Documents\EFREI\S9\Scala\ProjetScala\src\main\scala\Point.scala
+One of these files should be removed from the classpath.
+	at dotty.tools.dotc.core.SymDenotations$PackageClassDenotation.dropStale$1(SymDenotations.scala:2439)
+	at dotty.tools.dotc.core.SymDenotations$PackageClassDenotation.recur$1(SymDenotations.scala:2403)
+	at dotty.tools.dotc.core.SymDenotations$PackageClassDenotation.computeMembersNamed(SymDenotations.scala:2459)
+	at dotty.tools.dotc.core.SymDenotations$ClassDenotation.membersNamed(SymDenotations.scala:2012)
+	at dotty.tools.dotc.core.SymDenotations$ClassDenotation.findMember(SymDenotations.scala:2063)
+	at dotty.tools.dotc.core.Types$Type.go$1(Types.scala:683)
+	at dotty.tools.dotc.core.Types$Type.goThis$1(Types.scala:807)
+	at dotty.tools.dotc.core.Types$Type.go$1(Types.scala:700)
+	at dotty.tools.dotc.core.Types$Type.findMember(Types.scala:870)
+	at dotty.tools.dotc.core.Types$Type.memberBasedOnFlags(Types.scala:666)
+	at dotty.tools.dotc.core.Types$Type.member(Types.scala:650)
+	at dotty.tools.dotc.core.Types$Type.allMembers$$anonfun$1(Types.scala:1011)
+	at scala.runtime.function.JProcedure2.apply(JProcedure2.java:15)
+	at scala.runtime.function.JProcedure2.apply(JProcedure2.java:10)
+	at dotty.tools.dotc.core.Types$Type.memberDenots$$anonfun$1(Types.scala:916)
+	at scala.runtime.function.JProcedure1.apply(JProcedure1.java:15)
+	at scala.runtime.function.JProcedure1.apply(JProcedure1.java:10)
+	at scala.collection.immutable.BitmapIndexedSetNode.foreach(HashSet.scala:937)
+	at scala.collection.immutable.HashSet.foreach(HashSet.scala:944)
+	at dotty.tools.dotc.core.Types$Type.memberDenots(Types.scala:916)
+	at dotty.tools.dotc.core.Types$Type.allMembers(Types.scala:1011)
+	at scala.meta.internal.pc.IndexedContext$.accesibleMembers$1(IndexedContext.scala:127)
+	at scala.meta.internal.pc.IndexedContext$.scala$meta$internal$pc$IndexedContext$$$extractNames(IndexedContext.scala:184)
+	at scala.meta.internal.pc.IndexedContext$LazyWrapper.<init>(IndexedContext.scala:77)
+	at scala.meta.internal.pc.IndexedContext$.apply(IndexedContext.scala:65)
+	at scala.meta.internal.pc.IndexedContext$LazyWrapper.<init>(IndexedContext.scala:76)
+	at scala.meta.internal.pc.IndexedContext$.apply(IndexedContext.scala:65)
+	at scala.meta.internal.pc.IndexedContext$LazyWrapper.<init>(IndexedContext.scala:76)
+	at scala.meta.internal.pc.IndexedContext$.apply(IndexedContext.scala:65)
+	at scala.meta.internal.pc.IndexedContext$LazyWrapper.<init>(IndexedContext.scala:76)
+	at scala.meta.internal.pc.IndexedContext$.apply(IndexedContext.scala:65)
+	at scala.meta.internal.pc.IndexedContext$LazyWrapper.<init>(IndexedContext.scala:76)
+	at scala.meta.internal.pc.IndexedContext$.apply(IndexedContext.scala:65)
+	at scala.meta.internal.pc.IndexedContext$LazyWrapper.<init>(IndexedContext.scala:76)
+	at scala.meta.internal.pc.IndexedContext$.apply(IndexedContext.scala:65)
+	at scala.meta.internal.pc.PcDefinitionProvider.definitions(PcDefinitionProvider.scala:59)
+	at scala.meta.internal.pc.ScalaPresentationCompiler.definition$$anonfun$1(ScalaPresentationCompiler.scala:207)
+	at scala.meta.internal.pc.CompilerAccess.withSharedCompiler(CompilerAccess.scala:137)
+	at scala.meta.internal.pc.CompilerAccess.withNonInterruptableCompiler$$anonfun$1(CompilerAccess.scala:125)
+	at scala.meta.internal.pc.CompilerAccess.onCompilerJobQueue$$anonfun$1(CompilerAccess.scala:197)
+	at scala.meta.internal.pc.CompilerJobQueue$Job.run(CompilerJobQueue.scala:139)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+[0m2022.01.03 16:51:44 WARN  no build target for: C:\Users\alexa\Documents\EFREI\S9\Scala\ProjetScala\src\main\scala\Point.scala[0m
+[0m2022.01.03 16:52:03 WARN  no build target for: C:\Users\alexa\Documents\EFREI\S9\Scala\ProjetScala\src\main\scala\Point.scala[0m
+[0m2022.01.03 16:52:10 WARN  no build target for: C:\Users\alexa\Documents\EFREI\S9\Scala\ProjetScala\src\main\scala\Point.scala[0m
+[0m2022.01.03 16:52:10 WARN  no build target for: C:\Users\alexa\Documents\EFREI\S9\Scala\ProjetScala\src\main\scala\Point.scala[0m
+janv. 03, 2022 4:52:21 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint fallbackResponseError
+GRAVE: Internal error: java.lang.reflect.InvocationTargetException
+java.lang.RuntimeException: java.lang.reflect.InvocationTargetException
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.lambda$null$0(GenericEndpoint.java:67)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.request(GenericEndpoint.java:120)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleRequest(RemoteEndpoint.java:261)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.consume(RemoteEndpoint.java:190)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:194)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:94)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:113)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+Caused by: java.lang.reflect.InvocationTargetException
+	at jdk.internal.reflect.GeneratedMethodAccessor5.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.lambda$null$0(GenericEndpoint.java:65)
+	... 11 more
+Caused by: java.lang.IllegalArgumentException: 28 is not a valid line number, allowed [0..27]
+	at scala.meta.internal.inputs.InternalInput.lineToOffset(InternalInput.scala:37)
+	at scala.meta.internal.inputs.InternalInput.lineToOffset$(InternalInput.scala:32)
+	at scala.meta.inputs.Input$VirtualFile.lineToOffset(Input.scala:80)
+	at scala.meta.inputs.Position$Range$.lineLength$1(Position.scala:57)
+	at scala.meta.inputs.Position$Range$.apply(Position.scala:60)
+	at scala.meta.internal.mtags.MtagsEnrichments$XtensionPositionLspInverse.toMeta(MtagsEnrichments.scala:133)
+	at scala.meta.internal.parsing.Trees.$anonfun$findLastEnclosingAt$4(Trees.scala:77)
+	at scala.Option.flatMap(Option.scala:271)
+	at scala.meta.internal.parsing.Trees.findLastEnclosingAt(Trees.scala:76)
+	at scala.meta.internal.metals.codeactions.PatternMatchRefactor.contribute(PatternMatchRefactor.scala:96)
+	at scala.meta.internal.metals.CodeActionProvider$$anonfun$1.applyOrElse(CodeActionProvider.scala:62)
+	at scala.meta.internal.metals.CodeActionProvider$$anonfun$1.applyOrElse(CodeActionProvider.scala:61)
+	at scala.collection.immutable.List.collect(List.scala:323)
+	at scala.meta.internal.metals.CodeActionProvider.codeActions(CodeActionProvider.scala:61)
+	at scala.meta.internal.metals.MetalsLanguageServer.$anonfun$codeAction$1(MetalsLanguageServer.scala:1555)
+	at scala.meta.internal.metals.CancelTokens$.future(CancelTokens.scala:38)
+	at scala.meta.internal.metals.MetalsLanguageServer.codeAction(MetalsLanguageServer.scala:1554)
+	... 15 more
+
+janv. 03, 2022 4:52:29 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint fallbackResponseError
+GRAVE: Internal error: java.lang.reflect.InvocationTargetException
+java.lang.RuntimeException: java.lang.reflect.InvocationTargetException
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.lambda$null$0(GenericEndpoint.java:67)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.request(GenericEndpoint.java:120)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleRequest(RemoteEndpoint.java:261)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.consume(RemoteEndpoint.java:190)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:194)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:94)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:113)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+Caused by: java.lang.reflect.InvocationTargetException
+	at jdk.internal.reflect.GeneratedMethodAccessor5.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.lambda$null$0(GenericEndpoint.java:65)
+	... 11 more
+Caused by: java.lang.IllegalArgumentException: 29 is not a valid line number, allowed [0..27]
+	at scala.meta.internal.inputs.InternalInput.lineToOffset(InternalInput.scala:37)
+	at scala.meta.internal.inputs.InternalInput.lineToOffset$(InternalInput.scala:32)
+	at scala.meta.inputs.Input$VirtualFile.lineToOffset(Input.scala:80)
+	at scala.meta.inputs.Position$Range$.apply(Position.scala:59)
+	at scala.meta.internal.mtags.MtagsEnrichments$XtensionPositionLspInverse.toMeta(MtagsEnrichments.scala:133)
+	at scala.meta.internal.parsing.Trees.$anonfun$findLastEnclosingAt$4(Trees.scala:77)
+	at scala.Option.flatMap(Option.scala:271)
+	at scala.meta.internal.parsing.Trees.findLastEnclosingAt(Trees.scala:76)
+	at scala.meta.internal.metals.codeactions.PatternMatchRefactor.contribute(PatternMatchRefactor.scala:96)
+	at scala.meta.internal.metals.CodeActionProvider$$anonfun$1.applyOrElse(CodeActionProvider.scala:62)
+	at scala.meta.internal.metals.CodeActionProvider$$anonfun$1.applyOrElse(CodeActionProvider.scala:61)
+	at scala.collection.immutable.List.collect(List.scala:323)
+	at scala.meta.internal.metals.CodeActionProvider.codeActions(CodeActionProvider.scala:61)
+	at scala.meta.internal.metals.MetalsLanguageServer.$anonfun$codeAction$1(MetalsLanguageServer.scala:1555)
+	at scala.meta.internal.metals.CancelTokens$.future(CancelTokens.scala:38)
+	at scala.meta.internal.metals.MetalsLanguageServer.codeAction(MetalsLanguageServer.scala:1554)
+	... 15 more
+
+janv. 03, 2022 4:52:30 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint fallbackResponseError
+GRAVE: Internal error: java.lang.reflect.InvocationTargetException
+java.lang.RuntimeException: java.lang.reflect.InvocationTargetException
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.lambda$null$0(GenericEndpoint.java:67)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.request(GenericEndpoint.java:120)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleRequest(RemoteEndpoint.java:261)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.consume(RemoteEndpoint.java:190)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:194)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:94)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:113)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+Caused by: java.lang.reflect.InvocationTargetException
+	at jdk.internal.reflect.GeneratedMethodAccessor5.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.lambda$null$0(GenericEndpoint.java:65)
+	... 11 more
+Caused by: java.lang.IllegalArgumentException: 28 is not a valid line number, allowed [0..27]
+	at scala.meta.internal.inputs.InternalInput.lineToOffset(InternalInput.scala:37)
+	at scala.meta.internal.inputs.InternalInput.lineToOffset$(InternalInput.scala:32)
+	at scala.meta.inputs.Input$VirtualFile.lineToOffset(Input.scala:80)
+	at scala.meta.inputs.Position$Range$.lineLength$1(Position.scala:57)
+	at scala.meta.inputs.Position$Range$.apply(Position.scala:60)
+	at scala.meta.internal.mtags.MtagsEnrichments$XtensionPositionLspInverse.toMeta(MtagsEnrichments.scala:133)
+	at scala.meta.internal.parsing.Trees.$anonfun$findLastEnclosingAt$4(Trees.scala:77)
+	at scala.Option.flatMap(Option.scala:271)
+	at scala.meta.internal.parsing.Trees.findLastEnclosingAt(Trees.scala:76)
+	at scala.meta.internal.metals.codeactions.PatternMatchRefactor.contribute(PatternMatchRefactor.scala:96)
+	at scala.meta.internal.metals.CodeActionProvider$$anonfun$1.applyOrElse(CodeActionProvider.scala:62)
+	at scala.meta.internal.metals.CodeActionProvider$$anonfun$1.applyOrElse(CodeActionProvider.scala:61)
+	at scala.collection.immutable.List.collect(List.scala:323)
+	at scala.meta.internal.metals.CodeActionProvider.codeActions(CodeActionProvider.scala:61)
+	at scala.meta.internal.metals.MetalsLanguageServer.$anonfun$codeAction$1(MetalsLanguageServer.scala:1555)
+	at scala.meta.internal.metals.CancelTokens$.future(CancelTokens.scala:38)
+	at scala.meta.internal.metals.MetalsLanguageServer.codeAction(MetalsLanguageServer.scala:1554)
+	... 15 more
+
+[0m2022.01.03 16:52:58 WARN  no build target for: C:\Users\alexa\Documents\EFREI\S9\Scala\ProjetScala\src\main\scala\Main.scala[0m
+[0m2022.01.03 16:53:33 WARN  no build target for: C:\Users\alexa\Documents\EFREI\S9\Scala\ProjetScala\src\main\scala\Point.scala[0m
+[0m2022.01.03 16:53:36 WARN  no build target for: C:\Users\alexa\Documents\EFREI\S9\Scala\ProjetScala\src\main\scala\Point.scala[0m
+[0m2022.01.03 16:53:52 WARN  no build target for: C:\Users\alexa\Documents\EFREI\S9\Scala\ProjetScala\src\main\scala\Main.scala[0m
+[0m2022.01.03 16:53:57 WARN  no build target for: C:\Users\alexa\Documents\EFREI\S9\Scala\ProjetScala\src\main\scala\Main.scala[0m
+[0m2022.01.03 16:54:16 WARN  no build target for: C:\Users\alexa\Documents\EFREI\S9\Scala\ProjetScala\src\main\scala\Main.scala[0m
+[0m2022.01.03 16:54:23 WARN  no build target for: C:\Users\alexa\Documents\EFREI\S9\Scala\ProjetScala\src\main\scala\Main.scala[0m
+[0m2022.01.03 16:54:27 WARN  no build target for: C:\Users\alexa\Documents\EFREI\S9\Scala\ProjetScala\src\main\scala\Main.scala[0m
+[0m2022.01.03 16:56:19 WARN  no build target for: C:\Users\alexa\Documents\EFREI\S9\Scala\ProjetScala\src\main\scala\Main.scala[0m
+[0m2022.01.03 16:56:40 WARN  no build target for: C:\Users\alexa\Documents\EFREI\S9\Scala\ProjetScala\src\main\scala\Main.scala[0m
+janv. 03, 2022 4:56:40 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+AVERTISSEMENT: Unmatched cancel notification for request id 9212
+janv. 03, 2022 4:56:52 PM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+INFOS: Unsupported notification method: $/setTrace
+[0m2022.01.03 16:56:52 WARN  no build target for: C:\Users\alexa\Documents\EFREI\S9\Scala\ProjetScala\src\main\scala\Main.scala[0m
+[0m2022.01.03 16:57:09 WARN  no build target for: C:\Users\alexa\Documents\EFREI\S9\Scala\ProjetScala\src\main\scala\Main.scala[0m
+[0m2022.01.03 16:57:13 WARN  no build target for: C:\Users\alexa\Documents\EFREI\S9\Scala\ProjetScala\src\main\scala\Main.scala[0m
+[0m2022.01.03 16:57:33 WARN  no build target for: C:\Users\alexa\Documents\EFREI\S9\Scala\ProjetScala\src\main\scala\Point.scala[0m
+[0m2022.01.03 16:58:09 WARN  no build target for: C:\Users\alexa\Documents\EFREI\S9\Scala\ProjetScala\src\main\scala\Main.scala[0m
+[0m2022.01.03 17:01:09 WARN  no build target for: C:\Users\alexa\Documents\EFREI\S9\Scala\ProjetScala\src\main\scala\Main.scala[0m
+[0m2022.01.03 17:02:17 WARN  no build target for: C:\Users\alexa\Documents\EFREI\S9\Scala\ProjetScala\src\main\scala\Point.scala[0m
+[0m2022.01.03 17:02:30 WARN  no build target for: C:\Users\alexa\Documents\EFREI\S9\Scala\ProjetScala\src\main\scala\Point.scala[0m
+[0m2022.01.03 17:03:13 WARN  no build target for: C:\Users\alexa\Documents\EFREI\S9\Scala\ProjetScala\src\main\scala\Main.scala[0m
+[0m2022.01.03 17:07:54 WARN  no build target for: C:\Users\alexa\Documents\EFREI\S9\Scala\ProjetScala\src\main\scala\Main.scala[0m
+[0m2022.01.03 19:23:49 INFO  shutting down Metals[0m
+[0m2022.01.05 11:29:48 INFO  Started: Metals version 0.10.9 in workspace 'C:\Users\alexa\Documents\EFREI\S9\Scala\ProjetScala' for client Visual Studio Code 1.63.2.[0m
+[0m2022.01.05 11:29:50 INFO  time: initialize in 1.76s[0m
+[0m2022.01.05 11:29:51 WARN  Build server is not auto-connectable.[0m
+[0m2022.01.05 11:29:51 WARN  no build target for: C:\Users\alexa\Documents\EFREI\S9\Scala\ProjetScala\src\main\scala\Main.scala[0m
+[0m2022.01.05 11:29:51 INFO  skipping build import with status 'Requested'[0m
+[0m2022.01.05 11:29:57 INFO  no build target: using presentation compiler with only scala-library: 3.1.0[0m
+[0m2022.01.05 11:30:02 INFO  time: code lens generation in 10s[0m
+[0m2022.01.05 11:33:10 WARN  no build target for: C:\Users\alexa\Documents\EFREI\S9\Scala\ProjetScala\src\main\scala\Point.scala[0m
+[0m2022.01.05 11:33:45 WARN  no build target for: C:\Users\alexa\Documents\EFREI\S9\Scala\ProjetScala\src\main\scala\Point.scala[0m
+[0m2022.01.05 11:36:24 WARN  no build target for: C:\Users\alexa\Documents\EFREI\S9\Scala\ProjetScala\src\main\scala\Main.scala[0m
+[0m2022.01.05 11:39:10 INFO  shutting down Metals[0m
+[0m2022.01.10 14:53:36 INFO  Started: Metals version 0.10.9 in workspace 'C:\Users\alexa\Documents\EFREI\S9\Scala\ProjetScala' for client Visual Studio Code 1.63.2.[0m
+[0m2022.01.10 14:53:39 INFO  time: initialize in 2.95s[0m
+[0m2022.01.10 14:53:40 WARN  Build server is not auto-connectable.[0m
+[0m2022.01.10 14:53:40 WARN  no build target for: C:\Users\alexa\Documents\EFREI\S9\Scala\ProjetScala\src\main\scala\Main.scala[0m
+[0m2022.01.10 14:53:40 INFO  skipping build import with status 'Requested'[0m
+[0m2022.01.10 14:53:49 INFO  no build target: using presentation compiler with only scala-library: 3.1.0[0m
+[0m2022.01.10 16:18:27 WARN  no build target for: C:\Users\alexa\Documents\EFREI\S9\Scala\ProjetScala\src\main\scala\Point.scala[0m
+janv. 10, 2022 4:18:28 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+AVERTISSEMENT: Unmatched cancel notification for request id 2
+[0m2022.01.10 16:18:29 INFO  time: code lens generation in 1.32s[0m
+[0m2022.01.10 16:18:29 INFO  time: code lens generation in 1.47s[0m
+[0m2022.01.10 16:22:34 WARN  no build target for: C:\Users\alexa\Documents\EFREI\S9\Scala\ProjetScala\src\main\scala\Main.scala[0m
+[0m2022.01.10 16:32:31 WARN  no build target for: C:\Users\alexa\Documents\EFREI\S9\Scala\sample\src\main\scala\fileReader\Main.scala[0m
+[0m2022.01.10 16:32:42 WARN  no build target for: C:\Users\alexa\Documents\EFREI\S9\Scala\sample\src\main\scala\fileReader\service\CSV.scala[0m
+[0m2022.01.10 16:32:52 WARN  no build target for: C:\Users\alexa\Documents\EFREI\S9\Scala\sample\src\main\scala\fileReader\model\Point.scala[0m
+[0m2022.01.11 08:02:45 INFO  shutting down Metals[0m
