@@ -18,7 +18,7 @@ class Runways ( id : Int,
                 he_elevation_ft: Int,
                 he_heading_degT: Float,
                 he_displaced_threshold_ft : Int,
-            ) extends Airport
+            ) 
 
 object Runways{
 

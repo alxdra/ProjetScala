@@ -1,0 +1,14 @@
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(compile; run, Some(a0917f5e-559a-4181-8dbd-7742d1b7e340), Some(CommandSource(console0)))[0m
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(compile, None, Some(CommandSource(console0)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mEvaluating tasks: Compile / compile[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning task... Cancel: Signal, check cycles: false, forcegc: true[0m
+[0m[[0m[0minfo[0m] [0m[0mcompiling 1 Scala source to C:\Users\alexa\Documents\EFREI\S9\Scala\ProjetScala\target\scala-2.13\classes ...[0m
+[0m[[0m[31merror[0m] [0m[0mC:\Users\alexa\Documents\EFREI\S9\Scala\ProjetScala\src\main\scala\Country.scala:19:45: type mismatch;[0m
+[0m[[0m[31merror[0m] [0m[0m found   : Some[String][0m
+[0m[[0m[31merror[0m] [0m[0m required: Array[Option[String]][0m
+[0m[[0m[31merror[0m] [0m[0m                         wikipedia_link,Some(keyword1)))[0m
+[0m[[0m[31merror[0m] [0m[0m                                            ^[0m
+[0m[[0m[31merror[0m] [0m[0mone error found[0m
+[0m[[0m[31merror[0m] [0m[0m(Compile / [31mcompileIncremental[0m) Compilation failed[0m
+[0m[[0m[31merror[0m] [0m[0mTotal time: 0 s, completed 17 janv. 2022 15:46:46[0m
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(shell, None, None)[0m

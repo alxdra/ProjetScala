@@ -4116,3 +4116,490 @@ Caused by: java.lang.IllegalArgumentException: 18 is not a valid line number, al
 2022.01.16 17:10:26 WARN  no build target for: C:\Users\alexa\Documents\EFREI\S9\Scala\sample\src\main\scala\fileReader\service\CSV.scala
 2022.01.16 17:10:40 WARN  no build target for: C:\Users\alexa\Documents\EFREI\S9\Scala\ProjetScala\src\main\scala\Airport.scala
 2022.01.16 17:11:56 WARN  no build target for: C:\Users\alexa\Documents\EFREI\S9\Scala\ProjetScala\src\main\scala\Airport.scala
+janv. 16, 2022 5:20:27 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+AVERTISSEMENT: Unmatched cancel notification for request id 2176
+janv. 16, 2022 5:20:44 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+AVERTISSEMENT: Unmatched cancel notification for request id 2216
+2022.01.16 17:22:16 WARN  no build target for: C:\Users\alexa\Documents\EFREI\S9\Scala\ProjetScala\src\main\scala\Country.scala
+2022.01.16 17:22:33 WARN  no build target for: C:\Users\alexa\Documents\EFREI\S9\Scala\ProjetScala\src\main\scala\Main.scala
+2022.01.16 17:23:22 WARN  no build target for: C:\Users\alexa\Documents\EFREI\S9\Scala\ProjetScala\src\main\scala\Country.scala
+2022.01.16 17:23:39 WARN  no build target for: C:\Users\alexa\Documents\EFREI\S9\Scala\ProjetScala\src\main\scala\Country.scala
+2022.01.16 17:23:45 WARN  no build target for: C:\Users\alexa\Documents\EFREI\S9\Scala\ProjetScala\src\main\scala\Country.scala
+2022.01.16 17:23:55 WARN  no build target for: C:\Users\alexa\Documents\EFREI\S9\Scala\ProjetScala\src\main\scala\Point.scala
+2022.01.16 17:24:30 WARN  no build target for: C:\Users\alexa\Documents\EFREI\S9\Scala\ProjetScala\src\main\scala\Main.scala
+2022.01.16 17:26:24 WARN  no build target for: C:\Users\alexa\Documents\EFREI\S9\Scala\ProjetScala\src\main\scala\Main.scala
+2022.01.16 17:27:32 WARN  no build target for: C:\Users\alexa\Documents\EFREI\S9\Scala\ProjetScala\src\main\scala\Country.scala
+2022.01.16 17:27:44 WARN  no build target for: C:\Users\alexa\Documents\EFREI\S9\Scala\ProjetScala\src\main\scala\Main.scala
+2022.01.16 17:29:03 WARN  no build target for: C:\Users\alexa\Documents\EFREI\S9\Scala\ProjetScala\src\main\scala\Main.scala
+2022.01.16 17:29:13 WARN  no build target for: C:\Users\alexa\Documents\EFREI\S9\Scala\ProjetScala\src\main\scala\Main.scala
+2022.01.16 17:30:34 WARN  no build target for: C:\Users\alexa\Documents\EFREI\S9\Scala\ProjetScala\src\main\scala\Country.scala
+janv. 16, 2022 5:30:39 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint fallbackResponseError
+GRAVE: Internal error: java.lang.reflect.InvocationTargetException
+java.lang.RuntimeException: java.lang.reflect.InvocationTargetException
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.lambda$null$0(GenericEndpoint.java:67)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.request(GenericEndpoint.java:120)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleRequest(RemoteEndpoint.java:261)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.consume(RemoteEndpoint.java:190)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:194)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:94)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:113)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+Caused by: java.lang.reflect.InvocationTargetException
+	at jdk.internal.reflect.GeneratedMethodAccessor5.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.lambda$null$0(GenericEndpoint.java:65)
+	... 11 more
+Caused by: java.lang.IllegalArgumentException: 24 is not a valid line number, allowed [0..23]
+	at scala.meta.internal.inputs.InternalInput.lineToOffset(InternalInput.scala:37)
+	at scala.meta.internal.inputs.InternalInput.lineToOffset$(InternalInput.scala:32)
+	at scala.meta.inputs.Input$VirtualFile.lineToOffset(Input.scala:80)
+	at scala.meta.inputs.Position$Range$.lineLength$1(Position.scala:57)
+	at scala.meta.inputs.Position$Range$.apply(Position.scala:60)
+	at scala.meta.internal.mtags.MtagsEnrichments$XtensionPositionLspInverse.toMeta(MtagsEnrichments.scala:133)
+	at scala.meta.internal.parsing.Trees.$anonfun$findLastEnclosingAt$4(Trees.scala:77)
+	at scala.Option.flatMap(Option.scala:271)
+	at scala.meta.internal.parsing.Trees.findLastEnclosingAt(Trees.scala:76)
+	at scala.meta.internal.metals.codeactions.PatternMatchRefactor.contribute(PatternMatchRefactor.scala:96)
+	at scala.meta.internal.metals.CodeActionProvider$$anonfun$1.applyOrElse(CodeActionProvider.scala:64)
+	at scala.meta.internal.metals.CodeActionProvider$$anonfun$1.applyOrElse(CodeActionProvider.scala:63)
+	at scala.collection.immutable.List.collect(List.scala:323)
+	at scala.meta.internal.metals.CodeActionProvider.codeActions(CodeActionProvider.scala:63)
+	at scala.meta.internal.metals.MetalsLanguageServer.$anonfun$codeAction$1(MetalsLanguageServer.scala:1590)
+	at scala.meta.internal.metals.CancelTokens$.future(CancelTokens.scala:38)
+	at scala.meta.internal.metals.MetalsLanguageServer.codeAction(MetalsLanguageServer.scala:1589)
+	... 15 more
+
+2022.01.16 17:31:10 WARN  no build target for: C:\Users\alexa\Documents\EFREI\S9\Scala\ProjetScala\src\main\scala\Airport.scala
+2022.01.16 17:31:12 WARN  no build target for: C:\Users\alexa\Documents\EFREI\S9\Scala\ProjetScala\src\main\scala\Airport.scala
+2022.01.16 17:31:13 WARN  no build target for: C:\Users\alexa\Documents\EFREI\S9\Scala\ProjetScala\src\main\scala\Airport.scala
+2022.01.16 17:33:01 WARN  no build target for: C:\Users\alexa\Documents\EFREI\S9\Scala\ProjetScala\src\main\scala\Runways.scala
+2022.01.16 17:33:24 WARN  no build target for: C:\Users\alexa\Documents\EFREI\S9\Scala\ProjetScala\src\main\scala\Runways.scala
+2022.01.16 17:33:36 WARN  no build target for: C:\Users\alexa\Documents\EFREI\S9\Scala\ProjetScala\src\main\scala\Airport.scala
+2022.01.16 17:33:39 WARN  no build target for: C:\Users\alexa\Documents\EFREI\S9\Scala\ProjetScala\src\main\scala\Runways.scala
+2022.01.16 17:33:39 WARN  no build target for: C:\Users\alexa\Documents\EFREI\S9\Scala\ProjetScala\src\main\scala\Runways.scala
+2022.01.16 17:34:03 WARN  no build target for: C:\Users\alexa\Documents\EFREI\S9\Scala\ProjetScala\src\main\scala\Runways.scala
+2022.01.16 17:34:09 WARN  no build target for: C:\Users\alexa\Documents\EFREI\S9\Scala\ProjetScala\src\main\scala\Airport.scala
+2022.01.16 17:34:17 WARN  no build target for: C:\Users\alexa\Documents\EFREI\S9\Scala\ProjetScala\src\main\scala\Airport.scala
+2022.01.16 17:34:19 WARN  no build target for: C:\Users\alexa\Documents\EFREI\S9\Scala\ProjetScala\src\main\scala\Runways.scala
+janv. 16, 2022 5:36:54 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleNotification
+AVERTISSEMENT: Notification threw an exception: {
+  "jsonrpc": "2.0",
+  "method": "metals/didFocusTextDocument",
+  "params": [
+    "gitlens://f54a716/c%3A/Users/alexa/Documents/EFREI/S9/Scala/ProjetScala/src/main/scala/Point.scala?%7B%22path%22%3A%22%2Fc%3A%2FUsers%2Falexa%2FDocuments%2FEFREI%2FS9%2FScala%2FProjetScala%2Fsrc%2Fmain%2Fscala%2FPoint.scala%22%2C%22ref%22%3A%22f54a716cfba6c76bb7f418886434748700578981%22%2C%22repoPath%22%3A%22c%3A%2FUsers%2Falexa%2FDocuments%2FEFREI%2FS9%2FScala%2FProjetScala%22%7D"
+  ]
+}
+java.lang.RuntimeException: java.lang.reflect.InvocationTargetException
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.lambda$null$0(GenericEndpoint.java:67)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.notify(GenericEndpoint.java:152)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleNotification(RemoteEndpoint.java:220)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.consume(RemoteEndpoint.java:187)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:194)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:94)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:113)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+Caused by: java.lang.reflect.InvocationTargetException
+	at jdk.internal.reflect.GeneratedMethodAccessor16.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.lambda$null$0(GenericEndpoint.java:65)
+	... 11 more
+Caused by: java.nio.file.FileSystemNotFoundException: Provider "gitlens" not installed
+	at java.base/java.nio.file.Path.of(Path.java:212)
+	at java.base/java.nio.file.Paths.get(Paths.java:97)
+	at scala.meta.internal.metals.MetalsEnrichments$XtensionString.toAbsolutePath(MetalsEnrichments.scala:587)
+	at scala.meta.internal.metals.MetalsEnrichments$XtensionString.toAbsolutePath(MetalsEnrichments.scala:584)
+	at scala.meta.internal.metals.MetalsLanguageServer.didFocus(MetalsLanguageServer.scala:1096)
+	... 15 more
+
+janv. 16, 2022 5:37:03 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleNotification
+AVERTISSEMENT: Notification threw an exception: {
+  "jsonrpc": "2.0",
+  "method": "metals/didFocusTextDocument",
+  "params": [
+    "gitlens://b7e3dbd/c%3A/Users/alexa/Documents/EFREI/S9/Scala/ProjetScala/src/main/scala/Point.scala?%7B%22path%22%3A%22%2Fc%3A%2FUsers%2Falexa%2FDocuments%2FEFREI%2FS9%2FScala%2FProjetScala%2Fsrc%2Fmain%2Fscala%2FPoint.scala%22%2C%22ref%22%3A%22b7e3dbd34c376274a12dedc7fbcca8d3811fbc74%22%2C%22repoPath%22%3A%22c%3A%2FUsers%2Falexa%2FDocuments%2FEFREI%2FS9%2FScala%2FProjetScala%22%7D"
+  ]
+}
+java.lang.RuntimeException: java.lang.reflect.InvocationTargetException
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.lambda$null$0(GenericEndpoint.java:67)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.notify(GenericEndpoint.java:152)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleNotification(RemoteEndpoint.java:220)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.consume(RemoteEndpoint.java:187)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:194)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:94)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:113)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+Caused by: java.lang.reflect.InvocationTargetException
+	at jdk.internal.reflect.GeneratedMethodAccessor16.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.lambda$null$0(GenericEndpoint.java:65)
+	... 11 more
+Caused by: java.nio.file.FileSystemNotFoundException: Provider "gitlens" not installed
+	at java.base/java.nio.file.Path.of(Path.java:212)
+	at java.base/java.nio.file.Paths.get(Paths.java:97)
+	at scala.meta.internal.metals.MetalsEnrichments$XtensionString.toAbsolutePath(MetalsEnrichments.scala:587)
+	at scala.meta.internal.metals.MetalsEnrichments$XtensionString.toAbsolutePath(MetalsEnrichments.scala:584)
+	at scala.meta.internal.metals.MetalsLanguageServer.didFocus(MetalsLanguageServer.scala:1096)
+	... 15 more
+
+janv. 16, 2022 5:37:06 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleNotification
+AVERTISSEMENT: Notification threw an exception: {
+  "jsonrpc": "2.0",
+  "method": "metals/didFocusTextDocument",
+  "params": [
+    "gitlens://f54a716/c%3A/Users/alexa/Documents/EFREI/S9/Scala/ProjetScala/src/main/scala/Point.scala?%7B%22path%22%3A%22%2Fc%3A%2FUsers%2Falexa%2FDocuments%2FEFREI%2FS9%2FScala%2FProjetScala%2Fsrc%2Fmain%2Fscala%2FPoint.scala%22%2C%22ref%22%3A%22f54a716cfba6c76bb7f418886434748700578981%22%2C%22repoPath%22%3A%22c%3A%2FUsers%2Falexa%2FDocuments%2FEFREI%2FS9%2FScala%2FProjetScala%22%7D"
+  ]
+}
+java.lang.RuntimeException: java.lang.reflect.InvocationTargetException
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.lambda$null$0(GenericEndpoint.java:67)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.notify(GenericEndpoint.java:152)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleNotification(RemoteEndpoint.java:220)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.consume(RemoteEndpoint.java:187)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:194)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:94)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:113)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+Caused by: java.lang.reflect.InvocationTargetException
+	at jdk.internal.reflect.GeneratedMethodAccessor16.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.lambda$null$0(GenericEndpoint.java:65)
+	... 11 more
+Caused by: java.nio.file.FileSystemNotFoundException: Provider "gitlens" not installed
+	at java.base/java.nio.file.Path.of(Path.java:212)
+	at java.base/java.nio.file.Paths.get(Paths.java:97)
+	at scala.meta.internal.metals.MetalsEnrichments$XtensionString.toAbsolutePath(MetalsEnrichments.scala:587)
+	at scala.meta.internal.metals.MetalsEnrichments$XtensionString.toAbsolutePath(MetalsEnrichments.scala:584)
+	at scala.meta.internal.metals.MetalsLanguageServer.didFocus(MetalsLanguageServer.scala:1096)
+	... 15 more
+
+janv. 16, 2022 5:37:21 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleNotification
+AVERTISSEMENT: Notification threw an exception: {
+  "jsonrpc": "2.0",
+  "method": "metals/didFocusTextDocument",
+  "params": [
+    "gitlens://b7e3dbd/c%3A/Users/alexa/Documents/EFREI/S9/Scala/ProjetScala/src/main/scala/Point.scala?%7B%22path%22%3A%22%2Fc%3A%2FUsers%2Falexa%2FDocuments%2FEFREI%2FS9%2FScala%2FProjetScala%2Fsrc%2Fmain%2Fscala%2FPoint.scala%22%2C%22ref%22%3A%22b7e3dbd34c376274a12dedc7fbcca8d3811fbc74%22%2C%22repoPath%22%3A%22c%3A%2FUsers%2Falexa%2FDocuments%2FEFREI%2FS9%2FScala%2FProjetScala%22%7D"
+  ]
+}
+java.lang.RuntimeException: java.lang.reflect.InvocationTargetException
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.lambda$null$0(GenericEndpoint.java:67)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.notify(GenericEndpoint.java:152)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleNotification(RemoteEndpoint.java:220)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.consume(RemoteEndpoint.java:187)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:194)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:94)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:113)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+Caused by: java.lang.reflect.InvocationTargetException
+	at jdk.internal.reflect.GeneratedMethodAccessor16.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.lambda$null$0(GenericEndpoint.java:65)
+	... 11 more
+Caused by: java.nio.file.FileSystemNotFoundException: Provider "gitlens" not installed
+	at java.base/java.nio.file.Path.of(Path.java:212)
+	at java.base/java.nio.file.Paths.get(Paths.java:97)
+	at scala.meta.internal.metals.MetalsEnrichments$XtensionString.toAbsolutePath(MetalsEnrichments.scala:587)
+	at scala.meta.internal.metals.MetalsEnrichments$XtensionString.toAbsolutePath(MetalsEnrichments.scala:584)
+	at scala.meta.internal.metals.MetalsLanguageServer.didFocus(MetalsLanguageServer.scala:1096)
+	... 15 more
+
+2022.01.16 17:37:43 WARN  no build target for: C:\Users\alexa\Documents\EFREI\S9\Scala\ProjetScala\src\main\scala\Country.scala
+2022.01.16 17:38:28 WARN  no build target for: C:\Users\alexa\Documents\EFREI\S9\Scala\ProjetScala\src\main\scala\Country.scala
+2022.01.16 17:38:49 WARN  no build target for: C:\Users\alexa\Documents\EFREI\S9\Scala\ProjetScala\src\main\scala\Country.scala
+janv. 16, 2022 5:39:24 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleNotification
+AVERTISSEMENT: Notification threw an exception: {
+  "jsonrpc": "2.0",
+  "method": "metals/didFocusTextDocument",
+  "params": [
+    "gitlens://f54a716/c%3A/Users/alexa/Documents/EFREI/S9/Scala/ProjetScala/src/main/scala/Point.scala?%7B%22path%22%3A%22%2Fc%3A%2FUsers%2Falexa%2FDocuments%2FEFREI%2FS9%2FScala%2FProjetScala%2Fsrc%2Fmain%2Fscala%2FPoint.scala%22%2C%22ref%22%3A%22f54a716cfba6c76bb7f418886434748700578981%22%2C%22repoPath%22%3A%22c%3A%2FUsers%2Falexa%2FDocuments%2FEFREI%2FS9%2FScala%2FProjetScala%22%7D"
+  ]
+}
+java.lang.RuntimeException: java.lang.reflect.InvocationTargetException
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.lambda$null$0(GenericEndpoint.java:67)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.notify(GenericEndpoint.java:152)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleNotification(RemoteEndpoint.java:220)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.consume(RemoteEndpoint.java:187)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:194)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:94)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:113)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+Caused by: java.lang.reflect.InvocationTargetException
+	at jdk.internal.reflect.GeneratedMethodAccessor16.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.lambda$null$0(GenericEndpoint.java:65)
+	... 11 more
+Caused by: java.nio.file.FileSystemNotFoundException: Provider "gitlens" not installed
+	at java.base/java.nio.file.Path.of(Path.java:212)
+	at java.base/java.nio.file.Paths.get(Paths.java:97)
+	at scala.meta.internal.metals.MetalsEnrichments$XtensionString.toAbsolutePath(MetalsEnrichments.scala:587)
+	at scala.meta.internal.metals.MetalsEnrichments$XtensionString.toAbsolutePath(MetalsEnrichments.scala:584)
+	at scala.meta.internal.metals.MetalsLanguageServer.didFocus(MetalsLanguageServer.scala:1096)
+	... 15 more
+
+janv. 16, 2022 5:39:28 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleNotification
+AVERTISSEMENT: Notification threw an exception: {
+  "jsonrpc": "2.0",
+  "method": "metals/didFocusTextDocument",
+  "params": [
+    "gitlens://2093e30/c%3A/Users/alexa/Documents/EFREI/S9/Scala/ProjetScala/src/main/scala/Point.scala?%7B%22path%22%3A%22%2Fc%3A%2FUsers%2Falexa%2FDocuments%2FEFREI%2FS9%2FScala%2FProjetScala%2Fsrc%2Fmain%2Fscala%2FPoint.scala%22%2C%22ref%22%3A%222093e3042e0a2d7e84da64929402bf99e17dda65%22%2C%22repoPath%22%3A%22c%3A%2FUsers%2Falexa%2FDocuments%2FEFREI%2FS9%2FScala%2FProjetScala%22%7D"
+  ]
+}
+java.lang.RuntimeException: java.lang.reflect.InvocationTargetException
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.lambda$null$0(GenericEndpoint.java:67)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.notify(GenericEndpoint.java:152)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleNotification(RemoteEndpoint.java:220)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.consume(RemoteEndpoint.java:187)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:194)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:94)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:113)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+Caused by: java.lang.reflect.InvocationTargetException
+	at jdk.internal.reflect.GeneratedMethodAccessor16.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.lambda$null$0(GenericEndpoint.java:65)
+	... 11 more
+Caused by: java.nio.file.FileSystemNotFoundException: Provider "gitlens" not installed
+	at java.base/java.nio.file.Path.of(Path.java:212)
+	at java.base/java.nio.file.Paths.get(Paths.java:97)
+	at scala.meta.internal.metals.MetalsEnrichments$XtensionString.toAbsolutePath(MetalsEnrichments.scala:587)
+	at scala.meta.internal.metals.MetalsEnrichments$XtensionString.toAbsolutePath(MetalsEnrichments.scala:584)
+	at scala.meta.internal.metals.MetalsLanguageServer.didFocus(MetalsLanguageServer.scala:1096)
+	... 15 more
+
+janv. 16, 2022 5:39:39 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleNotification
+AVERTISSEMENT: Notification threw an exception: {
+  "jsonrpc": "2.0",
+  "method": "metals/didFocusTextDocument",
+  "params": [
+    "gitlens://f54a716/c%3A/Users/alexa/Documents/EFREI/S9/Scala/ProjetScala/src/main/scala/Point.scala?%7B%22path%22%3A%22%2Fc%3A%2FUsers%2Falexa%2FDocuments%2FEFREI%2FS9%2FScala%2FProjetScala%2Fsrc%2Fmain%2Fscala%2FPoint.scala%22%2C%22ref%22%3A%22f54a716cfba6c76bb7f418886434748700578981%22%2C%22repoPath%22%3A%22c%3A%2FUsers%2Falexa%2FDocuments%2FEFREI%2FS9%2FScala%2FProjetScala%22%7D"
+  ]
+}
+java.lang.RuntimeException: java.lang.reflect.InvocationTargetException
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.lambda$null$0(GenericEndpoint.java:67)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.notify(GenericEndpoint.java:152)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleNotification(RemoteEndpoint.java:220)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.consume(RemoteEndpoint.java:187)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:194)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:94)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:113)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+Caused by: java.lang.reflect.InvocationTargetException
+	at jdk.internal.reflect.GeneratedMethodAccessor16.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.lambda$null$0(GenericEndpoint.java:65)
+	... 11 more
+Caused by: java.nio.file.FileSystemNotFoundException: Provider "gitlens" not installed
+	at java.base/java.nio.file.Path.of(Path.java:212)
+	at java.base/java.nio.file.Paths.get(Paths.java:97)
+	at scala.meta.internal.metals.MetalsEnrichments$XtensionString.toAbsolutePath(MetalsEnrichments.scala:587)
+	at scala.meta.internal.metals.MetalsEnrichments$XtensionString.toAbsolutePath(MetalsEnrichments.scala:584)
+	at scala.meta.internal.metals.MetalsLanguageServer.didFocus(MetalsLanguageServer.scala:1096)
+	... 15 more
+
+janv. 16, 2022 5:39:41 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleNotification
+AVERTISSEMENT: Notification threw an exception: {
+  "jsonrpc": "2.0",
+  "method": "metals/didFocusTextDocument",
+  "params": [
+    "gitlens://2093e30/c%3A/Users/alexa/Documents/EFREI/S9/Scala/ProjetScala/src/main/scala/Point.scala?%7B%22path%22%3A%22%2Fc%3A%2FUsers%2Falexa%2FDocuments%2FEFREI%2FS9%2FScala%2FProjetScala%2Fsrc%2Fmain%2Fscala%2FPoint.scala%22%2C%22ref%22%3A%222093e3042e0a2d7e84da64929402bf99e17dda65%22%2C%22repoPath%22%3A%22c%3A%2FUsers%2Falexa%2FDocuments%2FEFREI%2FS9%2FScala%2FProjetScala%22%7D"
+  ]
+}
+java.lang.RuntimeException: java.lang.reflect.InvocationTargetException
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.lambda$null$0(GenericEndpoint.java:67)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.notify(GenericEndpoint.java:152)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleNotification(RemoteEndpoint.java:220)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.consume(RemoteEndpoint.java:187)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:194)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:94)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:113)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+Caused by: java.lang.reflect.InvocationTargetException
+	at jdk.internal.reflect.GeneratedMethodAccessor16.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.lambda$null$0(GenericEndpoint.java:65)
+	... 11 more
+Caused by: java.nio.file.FileSystemNotFoundException: Provider "gitlens" not installed
+	at java.base/java.nio.file.Path.of(Path.java:212)
+	at java.base/java.nio.file.Paths.get(Paths.java:97)
+	at scala.meta.internal.metals.MetalsEnrichments$XtensionString.toAbsolutePath(MetalsEnrichments.scala:587)
+	at scala.meta.internal.metals.MetalsEnrichments$XtensionString.toAbsolutePath(MetalsEnrichments.scala:584)
+	at scala.meta.internal.metals.MetalsLanguageServer.didFocus(MetalsLanguageServer.scala:1096)
+	... 15 more
+
+janv. 16, 2022 5:39:54 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleNotification
+AVERTISSEMENT: Notification threw an exception: {
+  "jsonrpc": "2.0",
+  "method": "metals/didFocusTextDocument",
+  "params": [
+    "gitlens://2093e30/c%3A/Users/alexa/Documents/EFREI/S9/Scala/ProjetScala/src/main/scala/Point.scala?%7B%22path%22%3A%22%2Fc%3A%2FUsers%2Falexa%2FDocuments%2FEFREI%2FS9%2FScala%2FProjetScala%2Fsrc%2Fmain%2Fscala%2FPoint.scala%22%2C%22ref%22%3A%222093e3042e0a2d7e84da64929402bf99e17dda65%22%2C%22repoPath%22%3A%22c%3A%2FUsers%2Falexa%2FDocuments%2FEFREI%2FS9%2FScala%2FProjetScala%22%7D"
+  ]
+}
+java.lang.RuntimeException: java.lang.reflect.InvocationTargetException
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.lambda$null$0(GenericEndpoint.java:67)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.notify(GenericEndpoint.java:152)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleNotification(RemoteEndpoint.java:220)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.consume(RemoteEndpoint.java:187)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:194)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:94)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:113)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+Caused by: java.lang.reflect.InvocationTargetException
+	at jdk.internal.reflect.GeneratedMethodAccessor16.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.lambda$null$0(GenericEndpoint.java:65)
+	... 11 more
+Caused by: java.nio.file.FileSystemNotFoundException: Provider "gitlens" not installed
+	at java.base/java.nio.file.Path.of(Path.java:212)
+	at java.base/java.nio.file.Paths.get(Paths.java:97)
+	at scala.meta.internal.metals.MetalsEnrichments$XtensionString.toAbsolutePath(MetalsEnrichments.scala:587)
+	at scala.meta.internal.metals.MetalsEnrichments$XtensionString.toAbsolutePath(MetalsEnrichments.scala:584)
+	at scala.meta.internal.metals.MetalsLanguageServer.didFocus(MetalsLanguageServer.scala:1096)
+	... 15 more
+
+2022.01.16 17:40:02 WARN  no build target for: C:\Users\alexa\Documents\EFREI\S9\Scala\ProjetScala\src\main\scala\Country.scala
+2022.01.16 17:41:09 WARN  no build target for: C:\Users\alexa\Documents\EFREI\S9\Scala\ProjetScala\src\main\scala\Country.scala
+2022.01.16 17:41:57 WARN  no build target for: C:\Users\alexa\Documents\EFREI\S9\Scala\ProjetScala\src\main\scala\Country.scala
+2022.01.16 17:41:59 WARN  no build target for: C:\Users\alexa\Documents\EFREI\S9\Scala\ProjetScala\src\main\scala\Country.scala
+2022.01.16 17:42:42 WARN  no build target for: C:\Users\alexa\Documents\EFREI\S9\Scala\ProjetScala\src\main\scala\Main.scala
+2022.01.16 17:43:21 WARN  no build target for: C:\Users\alexa\Documents\EFREI\S9\Scala\ProjetScala\src\main\scala\Main.scala
+2022.01.16 17:43:42 WARN  no build target for: C:\Users\alexa\Documents\EFREI\S9\Scala\ProjetScala\src\main\scala\Main.scala
+2022.01.16 17:43:55 WARN  no build target for: C:\Users\alexa\Documents\EFREI\S9\Scala\ProjetScala\src\main\scala\Main.scala
+2022.01.16 17:44:28 WARN  no build target for: C:\Users\alexa\Documents\EFREI\S9\Scala\ProjetScala\src\main\scala\Main.scala
+2022.01.16 17:44:52 WARN  no build target for: C:\Users\alexa\Documents\EFREI\S9\Scala\ProjetScala\src\main\scala\Main.scala
+2022.01.16 17:46:12 WARN  no build target for: C:\Users\alexa\Documents\EFREI\S9\Scala\ProjetScala\src\main\scala\Main.scala
+2022.01.16 17:47:41 WARN  no build target for: C:\Users\alexa\Documents\EFREI\S9\Scala\ProjetScala\src\main\scala\Country.scala
+2022.01.16 17:48:32 WARN  no build target for: C:\Users\alexa\Documents\EFREI\S9\Scala\ProjetScala\src\main\scala\Main.scala
+2022.01.16 17:48:43 WARN  no build target for: C:\Users\alexa\Documents\EFREI\S9\Scala\ProjetScala\src\main\scala\Main.scala
+2022.01.16 17:49:13 WARN  no build target for: C:\Users\alexa\Documents\EFREI\S9\Scala\ProjetScala\src\main\scala\Main.scala
+2022.01.16 17:50:14 WARN  no build target for: C:\Users\alexa\Documents\EFREI\S9\Scala\ProjetScala\src\main\scala\Main.scala
+2022.01.16 17:50:21 WARN  no build target for: C:\Users\alexa\Documents\EFREI\S9\Scala\ProjetScala\src\main\scala\Main.scala
+2022.01.16 17:50:42 WARN  no build target for: C:\Users\alexa\Documents\EFREI\S9\Scala\ProjetScala\src\main\scala\Country.scala
+2022.01.16 17:51:17 WARN  no build target for: C:\Users\alexa\Documents\EFREI\S9\Scala\ProjetScala\src\main\scala\Country.scala
+2022.01.16 17:52:44 WARN  no build target for: C:\Users\alexa\Documents\EFREI\S9\Scala\ProjetScala\src\main\scala\Country.scala
+2022.01.16 17:53:05 WARN  no build target for: C:\Users\alexa\Documents\EFREI\S9\Scala\ProjetScala\src\main\scala\Country.scala
+2022.01.16 17:53:36 WARN  no build target for: C:\Users\alexa\Documents\EFREI\S9\Scala\ProjetScala\src\main\scala\Country.scala
+2022.01.16 17:54:01 WARN  no build target for: C:\Users\alexa\Documents\EFREI\S9\Scala\ProjetScala\src\main\scala\Country.scala
+2022.01.16 17:54:17 WARN  no build target for: C:\Users\alexa\Documents\EFREI\S9\Scala\ProjetScala\src\main\scala\Country.scala
+2022.01.16 17:55:25 WARN  no build target for: C:\Users\alexa\Documents\EFREI\S9\Scala\ProjetScala\src\main\scala\Country.scala
+2022.01.16 17:59:38 WARN  no build target for: C:\Users\alexa\Documents\EFREI\S9\Scala\ProjetScala\src\main\scala\Country.scala
+2022.01.16 17:59:43 WARN  no build target for: C:\Users\alexa\Documents\EFREI\S9\Scala\ProjetScala\src\main\scala\Country.scala
+2022.01.16 18:00:52 WARN  no build target for: C:\Users\alexa\Documents\EFREI\S9\Scala\ProjetScala\src\main\scala\Main.scala
+janv. 16, 2022 6:01:17 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+AVERTISSEMENT: Unmatched cancel notification for request id 6856
+2022.01.16 18:01:21 WARN  no build target for: C:\Users\alexa\Documents\EFREI\S9\Scala\ProjetScala\src\main\scala\Country.scala
+2022.01.16 18:02:07 WARN  no build target for: C:\Users\alexa\Documents\EFREI\S9\Scala\ProjetScala\src\main\scala\Country.scala
+2022.01.16 18:02:08 WARN  no build target for: C:\Users\alexa\Documents\EFREI\S9\Scala\ProjetScala\src\main\scala\Point.scala
+2022.01.16 18:02:35 WARN  no build target for: C:\Users\alexa\Documents\EFREI\S9\Scala\ProjetScala\src\main\scala\Country.scala
+2022.01.16 18:03:23 WARN  no build target for: C:\Users\alexa\Documents\EFREI\S9\Scala\ProjetScala\src\main\scala\Main.scala
+2022.01.16 22:27:25 INFO  shutting down Metals
+2022.01.17 13:55:39 INFO  tracing is disabled for protocol LSP, to enable tracing of incoming and outgoing JSON messages create an empty file at c:\Users\alexa\Documents\EFREI\S9\Scala\ProjetScala\.metals\lsp.trace.json or C:\Users\alexa\AppData\Local\scalameta\metals\cache\lsp.trace.json
+2022.01.17 13:55:40 INFO  logging to file C:\Users\alexa\Documents\EFREI\S9\Scala\ProjetScala\.metals\metals.log
+2022.01.17 13:55:40 INFO  Started: Metals version 0.11.0 in workspace 'C:\Users\alexa\Documents\EFREI\S9\Scala\ProjetScala' for client Visual Studio Code 1.63.2.
+2022.01.17 13:55:40 INFO  Parse release: 11.0.11
+2022.01.17 13:55:54 INFO  time: initialize in 13s
+2022.01.17 13:55:54 WARN  Build server is not auto-connectable.
+2022.01.17 13:55:55 WARN  no build target for: C:\Users\alexa\Documents\EFREI\S9\Scala\ProjetScala\src\main\scala\Country.scala
+2022.01.17 13:55:55 WARN  no build target for: C:\Users\alexa\Documents\EFREI\S9\Scala\ProjetScala\src\main\scala\Main.scala
+2022.01.17 13:55:55 INFO  skipping build import with status 'Requested'
+2022.01.17 13:56:02 INFO  no build target found for C:\Users\alexa\Documents\EFREI\S9\Scala\ProjetScala\src\main\scala\Country.scala. Using presentation compiler with project's scala-library version: 3.1.0
+2022.01.17 13:56:06 INFO  time: code lens generation in 10s
+2022.01.17 13:56:07 INFO  time: code lens generation in 11s
+2022.01.17 13:58:34 WARN  no build target for: C:\Users\alexa\Documents\EFREI\S9\Scala\ProjetScala\src\main\scala\Country.scala
+2022.01.17 14:00:22 WARN  no build target for: C:\Users\alexa\Documents\EFREI\S9\Scala\ProjetScala\src\main\scala\Main.scala
+2022.01.17 14:09:12 WARN  no build target for: C:\Users\alexa\Documents\EFREI\S9\Scala\ProjetScala\src\main\scala\Country.scala
+janv. 17, 2022 2:09:15 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+AVERTISSEMENT: Unmatched cancel notification for request id 232
+2022.01.17 14:09:47 WARN  no build target for: C:\Users\alexa\Documents\EFREI\S9\Scala\ProjetScala\src\main\scala\Country.scala
+2022.01.17 14:10:06 WARN  no build target for: C:\Users\alexa\Documents\EFREI\S9\Scala\ProjetScala\src\main\scala\Country.scala
+2022.01.17 14:11:43 INFO  time: code lens generation in 2.07s
+janv. 17, 2022 2:12:05 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+AVERTISSEMENT: Unmatched cancel notification for request id 574
+2022.01.17 14:12:08 WARN  no build target for: C:\Users\alexa\Documents\EFREI\S9\Scala\ProjetScala\src\main\scala\Country.scala
+janv. 17, 2022 2:12:52 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+AVERTISSEMENT: Unmatched cancel notification for request id 649
+2022.01.17 14:12:53 WARN  no build target for: C:\Users\alexa\Documents\EFREI\S9\Scala\ProjetScala\src\main\scala\Country.scala
+2022.01.17 14:13:44 WARN  no build target for: C:\Users\alexa\Documents\EFREI\S9\Scala\ProjetScala\src\main\scala\Country.scala
+2022.01.17 14:14:06 WARN  no build target for: C:\Users\alexa\Documents\EFREI\S9\Scala\ProjetScala\src\main\scala\Country.scala
+2022.01.17 14:14:51 WARN  no build target for: C:\Users\alexa\Documents\EFREI\S9\Scala\ProjetScala\src\main\scala\Country.scala
+2022.01.17 14:16:43 WARN  no build target for: C:\Users\alexa\Documents\EFREI\S9\Scala\ProjetScala\src\main\scala\Runways.scala
+janv. 17, 2022 2:20:13 PM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+INFOS: Unsupported notification method: $/setTrace
+2022.01.17 14:34:11 WARN  no build target for: C:\Users\alexa\Documents\EFREI\S9\Scala\ProjetScala\src\main\scala\Point.scala
+2022.01.17 14:41:32 WARN  no build target for: C:\Users\alexa\Documents\EFREI\S9\Scala\ProjetScala\src\main\scala\Country.scala
+2022.01.17 14:41:35 WARN  no build target for: C:\Users\alexa\Documents\EFREI\S9\Scala\ProjetScala\src\main\scala\Country.scala
+2022.01.17 14:42:29 WARN  no build target for: C:\Users\alexa\Documents\EFREI\S9\Scala\ProjetScala\src\main\scala\Country.scala
+2022.01.17 14:48:17 WARN  no build target for: C:\Users\alexa\Documents\EFREI\S9\Scala\ProjetScala\src\main\scala\Country.scala
+2022.01.17 14:48:17 WARN  no build target for: C:\Users\alexa\Documents\EFREI\S9\Scala\ProjetScala\src\main\scala\Country.scala
+2022.01.17 14:48:28 WARN  no build target for: C:\Users\alexa\Documents\EFREI\S9\Scala\ProjetScala\src\main\scala\Country.scala
+2022.01.17 14:52:43 WARN  no build target for: C:\Users\alexa\Documents\EFREI\S9\Scala\ProjetScala\src\main\scala\Country.scala
+2022.01.17 14:53:06 WARN  no build target for: C:\Users\alexa\Documents\EFREI\S9\Scala\ProjetScala\src\main\scala\Country.scala
+2022.01.17 14:53:22 WARN  no build target for: C:\Users\alexa\Documents\EFREI\S9\Scala\ProjetScala\src\main\scala\Country.scala
+2022.01.17 14:53:36 WARN  no build target for: C:\Users\alexa\Documents\EFREI\S9\Scala\ProjetScala\src\main\scala\Country.scala
+2022.01.17 14:54:41 WARN  no build target for: C:\Users\alexa\Documents\EFREI\S9\Scala\ProjetScala\src\main\scala\Country.scala
+2022.01.17 14:54:51 WARN  no build target for: C:\Users\alexa\Documents\EFREI\S9\Scala\ProjetScala\src\main\scala\Country.scala
+2022.01.17 14:58:00 WARN  no build target for: C:\Users\alexa\Documents\EFREI\S9\Scala\ProjetScala\src\main\scala\Country.scala
+2022.01.17 14:58:54 WARN  no build target for: C:\Users\alexa\Documents\EFREI\S9\Scala\ProjetScala\src\main\scala\Country.scala
+2022.01.17 14:59:23 WARN  no build target for: C:\Users\alexa\Documents\EFREI\S9\Scala\ProjetScala\src\main\scala\Country.scala
+2022.01.17 14:59:25 WARN  no build target for: C:\Users\alexa\Documents\EFREI\S9\Scala\ProjetScala\src\main\scala\Country.scala
+2022.01.17 14:59:25 WARN  no build target for: C:\Users\alexa\Documents\EFREI\S9\Scala\ProjetScala\src\main\scala\Country.scala
+2022.01.17 14:59:28 WARN  no build target for: C:\Users\alexa\Documents\EFREI\S9\Scala\ProjetScala\src\main\scala\Country.scala
+2022.01.17 15:00:31 WARN  no build target for: C:\Users\alexa\Documents\EFREI\S9\Scala\ProjetScala\src\main\scala\Country.scala
+2022.01.17 15:01:07 WARN  no build target for: C:\Users\alexa\Documents\EFREI\S9\Scala\ProjetScala\src\main\scala\Country.scala
+2022.01.17 15:45:37 WARN  no build target for: C:\Users\alexa\Documents\EFREI\S9\Scala\ProjetScala\src\main\scala\Country.scala
+2022.01.17 15:46:26 WARN  no build target for: C:\Users\alexa\Documents\EFREI\S9\Scala\ProjetScala\src\main\scala\Country.scala
+2022.01.17 15:46:44 WARN  no build target for: C:\Users\alexa\Documents\EFREI\S9\Scala\ProjetScala\src\main\scala\Country.scala
+2022.01.17 15:47:05 WARN  no build target for: C:\Users\alexa\Documents\EFREI\S9\Scala\ProjetScala\src\main\scala\Country.scala
+2022.01.17 15:49:42 WARN  no build target for: C:\Users\alexa\Documents\EFREI\S9\Scala\ProjetScala\src\main\scala\Country.scala
+2022.01.17 15:49:44 INFO  shutting down Metals
+2022.01.23 15:03:59 INFO  tracing is disabled for protocol LSP, to enable tracing of incoming and outgoing JSON messages create an empty file at c:\Users\alexa\Documents\EFREI\S9\Scala\ProjetScala\.metals\lsp.trace.json or C:\Users\alexa\AppData\Local\scalameta\metals\cache\lsp.trace.json
+2022.01.23 15:04:06 INFO  logging to file C:\Users\alexa\Documents\EFREI\S9\Scala\ProjetScala\.metals\metals.log
+2022.01.23 15:04:06 INFO  Started: Metals version 0.11.1 in workspace 'C:\Users\alexa\Documents\EFREI\S9\Scala\ProjetScala' for client Visual Studio Code 1.63.2.
+2022.01.23 15:04:06 INFO  Parse release: 11.0.11

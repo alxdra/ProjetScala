@@ -16,8 +16,7 @@ case class Airport(  id : Int,
                     home_link: String,
                     wikipedia_link: String,
                     keywords: String,
-                ) extends Country
-
+                )
 object Airport{
 
 }
