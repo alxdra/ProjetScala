@@ -4603,3 +4603,67 @@ INFOS: Unsupported notification method: $/setTrace
 2022.01.23 15:04:06 INFO  logging to file C:\Users\alexa\Documents\EFREI\S9\Scala\ProjetScala\.metals\metals.log
 2022.01.23 15:04:06 INFO  Started: Metals version 0.11.1 in workspace 'C:\Users\alexa\Documents\EFREI\S9\Scala\ProjetScala' for client Visual Studio Code 1.63.2.
 2022.01.23 15:04:06 INFO  Parse release: 11.0.11
+2022.01.23 15:04:13 INFO  time: initialize in 7.75s
+2022.01.23 15:04:17 WARN  Build server is not auto-connectable.
+2022.01.23 15:04:17 WARN  no build target for: C:\Users\alexa\Documents\EFREI\S9\Scala\ProjetScala\src\main\scala\Country.scala
+2022.01.23 15:04:17 WARN  no build target for: C:\Users\alexa\Documents\EFREI\S9\Scala\ProjetScala\src\main\scala\Main.scala
+2022.01.23 15:04:17 INFO  skipping build import with status 'Requested'
+janv. 23, 2022 3:04:19 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+AVERTISSEMENT: Unmatched cancel notification for request id 5
+janv. 23, 2022 3:04:19 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+AVERTISSEMENT: Unmatched cancel notification for request id 8
+janv. 23, 2022 3:04:19 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+AVERTISSEMENT: Unmatched cancel notification for request id 10
+janv. 23, 2022 3:04:19 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+AVERTISSEMENT: Unmatched cancel notification for request id 7
+2022.01.23 15:04:19 WARN  no build target for: C:\Users\alexa\Documents\EFREI\S9\Scala\ProjetScala\src\main\scala\Runways.scala
+janv. 23, 2022 3:04:20 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+AVERTISSEMENT: Unmatched cancel notification for request id 11
+2022.01.23 15:04:21 WARN  no build target for: C:\Users\alexa\Documents\EFREI\S9\Scala\ProjetScala\src\main\scala\Airport.scala
+janv. 23, 2022 3:04:21 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+AVERTISSEMENT: Unmatched cancel notification for request id 15
+2022.01.23 15:04:28 INFO  no build target found for C:\Users\alexa\Documents\EFREI\S9\Scala\ProjetScala\src\main\scala\Country.scala. Using presentation compiler with project's scala-library version: 3.1.0
+janv. 23, 2022 3:04:34 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+AVERTISSEMENT: Unmatched cancel notification for request id 22
+janv. 23, 2022 3:04:34 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+AVERTISSEMENT: Unmatched cancel notification for request id 21
+2022.01.23 15:04:34 INFO  time: code lens generation in 13s
+2022.01.23 15:04:34 INFO  time: code lens generation in 14s
+2022.01.23 15:04:34 INFO  time: code lens generation in 14s
+2022.01.23 15:04:34 INFO  time: code lens generation in 15s
+janv. 23, 2022 3:04:34 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+AVERTISSEMENT: Unmatched cancel notification for request id 25
+janv. 23, 2022 3:04:34 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+AVERTISSEMENT: Unmatched cancel notification for request id 26
+janv. 23, 2022 3:04:34 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+AVERTISSEMENT: Unmatched cancel notification for request id 29
+janv. 23, 2022 3:04:34 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+AVERTISSEMENT: Unmatched cancel notification for request id 31
+janv. 23, 2022 3:04:34 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+AVERTISSEMENT: Unmatched cancel notification for request id 33
+janv. 23, 2022 3:04:34 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+AVERTISSEMENT: Unmatched cancel notification for request id 34
+janv. 23, 2022 3:04:34 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+AVERTISSEMENT: Unmatched cancel notification for request id 37
+2022.01.23 15:05:13 INFO  time: code lens generation in 1.6s
+2022.01.23 15:21:03 WARN  no build target for: C:\Users\alexa\Documents\EFREI\S9\Scala\sample\src\main\scala\fileReader\Main.scala
+2022.01.23 15:21:12 WARN  no build target for: C:\Users\alexa\Documents\EFREI\S9\Scala\sample\src\main\scala\fileReader\service\CSV.scala
+2022.01.23 15:38:31 WARN  no build target for: C:\Users\alexa\Desktop\test3\src\main\scala\Point.scala
+2022.01.23 15:42:48 WARN  no build target for: C:\Users\alexa\Documents\EFREI\S9\Scala\sample\src\test\scala\fileReader\service\CSVSpec.scala
+2022.01.23 15:43:24 WARN  no build target for: C:\Users\alexa\Documents\EFREI\S9\Scala\sample\src\main\scala\fileReader\Main.scala
+2022.01.23 15:43:39 WARN  no build target for: C:\Users\alexa\Documents\EFREI\S9\Scala\sample\src\main\scala\fileReader\service\CSV.scala
+2022.01.23 15:44:57 WARN  no build target for: C:\Users\alexa\Documents\EFREI\S9\Scala\sample\src\main\scala\fileReader\model\Point.scala
+2022.01.23 15:46:08 WARN  no build target for: C:\Users\alexa\Documents\EFREI\S9\Scala\ProjetScala\src\main\scala\Point.scala
+2022.01.23 15:51:27 WARN  no build target for: C:\Users\alexa\Documents\EFREI\S9\Scala\exopoint\src\main\scala\Point.scala
+janv. 23, 2022 3:56:40 PM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+INFOS: Unsupported notification method: $/setTrace
+2022.01.23 17:29:05 WARN  no build target for: C:\Users\alexa\Downloads\Main.scala
+2022.01.23 17:35:09 INFO  
+2022.01.23 17:35:09 INFO  Template applied in C:\Users\alexa\Documents\EFREI\S9\Scala\.\tplangages
+2022.01.23 17:35:09 INFO  
+2022.01.23 17:35:09 INFO  time: ran 'giter8.Giter8' in 3.46s
+2022.01.23 17:35:57 INFO  shutting down Metals
+2022.01.24 14:16:18 INFO  tracing is disabled for protocol LSP, to enable tracing of incoming and outgoing JSON messages create an empty file at c:\Users\alexa\Documents\EFREI\S9\Scala\ProjetScala\.metals\lsp.trace.json or C:\Users\alexa\AppData\Local\scalameta\metals\cache\lsp.trace.json
+2022.01.24 14:16:18 INFO  logging to file C:\Users\alexa\Documents\EFREI\S9\Scala\ProjetScala\.metals\metals.log
+2022.01.24 14:16:18 INFO  Started: Metals version 0.11.1 in workspace 'C:\Users\alexa\Documents\EFREI\S9\Scala\ProjetScala' for client Visual Studio Code 1.63.2.
+2022.01.24 14:16:18 INFO  Parse release: 11.0.11
