@@ -1,3 +1,4 @@
+import scala.util.Try
 case class Airport(  id : Int, 
                     identity : String, 
                     airport_type : String,
@@ -17,20 +18,43 @@ case class Airport(  id : Int,
                     wikipedia_link: Option[String],
                     keywords: Option[String]
                 )
-/*
+
 object Airport{
-    def fromCSV[A](lines : Array[String]): Either[String, Airport] = {
-        lines
+    def fromCSV[A](line : Array[String]): Either[String, Airport] = {
+            (Try(line(0).toInt).toOption,  
+            line.lift(1), 
+            line.lift(2), 
+            line.lift(3), 
+            Try(line(4).toFloat).toOption, 
+            Try(line(5).toFloat).toOption, 
+            Try(line(6).toInt).toOption,
+            line.lift(7), 
+            line.lift(8), 
+            line.lift(9), 
+            line.lift(10),
+            line.lift(11),
+            line.lift(12), 
+            line.lift(13), 
+            line.lift(14), 
+            line.lift(15),
+            line.lift(16),
+            line.lift(17)
+            ) 
              match{
-                case Array(id, identity, airport_type,name, latitude_deg, longitude_deg , elevation_ft,
-                            continent, country, region, municipality, scheduled_service, gps, iata_code,
-                            local_code, home_link, wiki_link, keyword)  => 
-                     Right(Airport(id.toInt, identity, airport_type,name, Some(latitude_deg.toFloat), Some(longitude_deg.toFloat), 
-                            Some(elevation_ft.toInt),  continent, country, region, municipality, scheduled_service, gps, Some(iata_code),
-                            local_code,Some(home_link), Some(wiki_link), Some(keyword)))
-                
-                case _ => Left("Error to build airport")
+                 case (Some(id), Some(identity), Some(airport_type), Some(name), Some(latitude_deg), Some(longitude_deg), Some(elevation_ft), 
+                            Some(continent), Some(country), Some(region), Some(municipality), Some(scheduled_service), Some(gps), Some(iata_code),
+                            Some(local_code), Some(home_link), Some(wiki_link), Some(keyword))  => 
+                     Right(Airport(id, identity, airport_type,name, Some(latitude_deg), Some(longitude_deg), Some(elevation_ft),  continent, country, region, municipality, Some(scheduled_service), Some(gps), Some(iata_code),
+                            Some(local_code), Some(home_link), Some(wiki_link), Some(keyword)))
+
+                    case _ => Left("Error to build airport")
             }
     }
+    def checkLine[T](tab : Array[T]): Array[T] = { 
+        tab.map(x) match{
+            case Int => Some(x)
+            case _ => None
+        }
+    }
 }
-*/
+
