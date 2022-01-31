@@ -41,30 +41,11 @@ object Airport{
             line.lift(17).flatMap(x => if(x.isEmpty) None else Some(x)) //keywords
             )
              match{
-                 case (Some(id), Some(identity), Some(airport_type), Some(name), Some(latitude_deg), Some(longitude_deg), Some(elevation_ft), 
+                 case (Some(id), Some(identity), Some(airport_type), Some(name), latitude_deg, longitude_deg, elevation_ft, 
                             continent, Some(country), region, municipality, scheduled_service, gps, iata_code,
                             local_code, home_link, wiki_link, keyword)  => 
-                     Right(Airport(id, identity, airport_type,name, Some(latitude_deg), Some(longitude_deg), Some(elevation_ft),  continent, country, region, municipality, scheduled_service, gps, iata_code,
+                     Right(Airport(id, identity, airport_type,name, latitude_deg, longitude_deg, elevation_ft,  continent, country, region, municipality, scheduled_service, gps, iata_code,
                             local_code, home_link, wiki_link, keyword))
-
-                case (Some(id), Some(identity), Some(airport_type), Some(name), Some(latitude_deg), Some(longitude_deg), Some(elevation_ft), 
-                            continent, Some(country), region, municipality, scheduled_service, gps, iata_code,
-                            local_code, home_link, wiki_link, keyword)  => 
-                     Right(Airport(id, identity, airport_type,name, Some(latitude_deg), Some(longitude_deg), Some(elevation_ft),  continent, country, region, municipality, scheduled_service, gps, iata_code,
-                            local_code, home_link, wiki_link, keyword))
-    
-                case (Some(id), Some(identity), Some(airport_type), Some(name), None, None, Some(elevation_ft), 
-                           continent, Some(country), region, municipality, scheduled_service, gps, iata_code,
-                            local_code, home_link, wiki_link, keyword)  => 
-                     Right(Airport(id, identity, airport_type,name, None, None, Some(elevation_ft),  continent, country, region, municipality, scheduled_service, gps, iata_code,
-                            local_code, home_link, wiki_link, keyword))
-
-                case (Some(id), Some(identity), Some(airport_type), Some(name), Some(latitude_deg), Some(longitude_deg), None, 
-                           continent, Some(country), region, municipality, scheduled_service, gps, iata_code,
-                            local_code, home_link, wiki_link, keyword)  => 
-                     Right(Airport(id, identity, airport_type,name, Some(latitude_deg), Some(longitude_deg),None,  continent, country, region, municipality, scheduled_service, gps, iata_code,
-                            local_code, home_link, wiki_link, keyword))
-
                 case _ => Left("Error to build airport")
             }
     }
