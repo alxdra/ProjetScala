@@ -30,26 +30,26 @@ object Runways{
         line(5).toOption,  //surface
         line.lift(6).flatMap(x => if(x==1) True else False), //lighted
         line.lift(7).flatMap(x => if(x==1) True else False), //cloded
-        line(8).toOption,//LE 
-        line.lift(9).flatMap(x => if(x.isEmpty) None else Some(x)), 
+        line.lift(8).flatMap(x => if(x.isEmpty) None else Some(x)), //LE
+        Try(line(9).toFloat).toOption,
         Try(line(10).toFloat).toOption,
-        Try(line(11).toFloat).toOption,
-        Try(line(12).toInt).toOption,
-        Try(line(13).toFloat).toOption,
-        Try(line(14).toInt).toOption,
-        line(15).toOption,//HE
-        line.lift(16).flatMap(x => if(x.isEmpty) None else Some(x)), 
-        Try(line(17).toFloat).toOption,
+        Try(line(11).toInt).toOption,
+        Try(line(12).toFloat).toOption,
+        Try(line(13).toInt).toOption,
+        line.lift(14).flatMap(x => if(x.isEmpty) None else Some(x)), //HE
+        Try(line(15).toFloat).toOption,
+        Try(line(16).toFloat).toOption,
+        Try(line(17).toInt).toOption,
         Try(line(18).toFloat).toOption,
-        Try(line(19).toInt).toOption,
-        Try(line(20).toFloat).toOption,
-        Try(line(21).toInt).toOption
+        Try(line(19).toInt).toOption
     )
     match 
         {       
-            case (Some(id),Some(airport_ref), Some(airport_ident), Some(length_ft), Some(width_ft), Some(surface), Some(lighted), Some(lighted), Some(closed), 
-            le_ident, le_latitude_deg, le_longitude_deg, le_elevation_ft, le_heading_degT, le_displaced_threshold_ft, he_ident, he_longitude_deg, he_latitude_deg, he_elevation_ft, he_heading_degT, he_displaced_threshold_ft) =>
-                Right()
+            case (Some(id),Some(airport_ref), Some(airport_ident), Some(length_ft), Some(width_ft), Some(surface), Some(lighted), Some(closed), 
+            le_ident, le_latitude_deg, le_longitude_deg, le_elevation_ft, le_heading_degT, le_displaced_threshold_ft, he_ident, he_latitude_deg, he_longitude_deg,
+            he_elevation_ft, he_heading_degT, he_displaced_threshold_ft) =>
+                Right(Runways(id,airport_ref, airport_ident, length_ft, width_ft, surface, lighted, closed, le_ident, le_latitude_deg, le_longitude_deg, le_elevation_ft, le_heading_degT, le_displaced_threshold_ft,
+                he_ident, he_longitude_deg, he_latitude_deg, he_elevation_ft, he_displaced_threshold_ft))
 
             case _ => Left("Error to build runway")
         }
