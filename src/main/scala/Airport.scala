@@ -28,7 +28,7 @@ object Airport{
             Try(line(4).toFloat).toOption, 
             Try(line(5).toFloat).toOption, 
             Try(line(6).toInt).toOption,
-            line.lift(7).flatMap(x => if(x.isEmpty) None else Some(x)), //continent 
+            line.lift(7), //continent 
             line.lift(8), //country
             line.lift(9).flatMap(x => if(x.isEmpty) None else Some(x)), //region
             line.lift(10).flatMap(x => if(x.isEmpty) None else Some(x)),//municipaliy 
@@ -58,6 +58,13 @@ object Airport{
                             local_code, home_link, wiki_link, keyword)  => 
                      Right(Airport(id, identity, airport_type,name, None, None, Some(elevation_ft),  continent, country, region, municipality, scheduled_service, gps, iata_code,
                             local_code, home_link, wiki_link, keyword))
+
+                case (Some(id), Some(identity), Some(airport_type), Some(name), Some(latitude_deg), Some(longitude_deg), None, 
+                           continent, Some(country), region, municipality, scheduled_service, gps, iata_code,
+                            local_code, home_link, wiki_link, keyword)  => 
+                     Right(Airport(id, identity, airport_type,name, Some(latitude_deg), Some(longitude_deg),None,  continent, country, region, municipality, scheduled_service, gps, iata_code,
+                            local_code, home_link, wiki_link, keyword))
+
                 case _ => Left("Error to build airport")
             }
     }
