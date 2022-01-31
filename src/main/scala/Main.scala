@@ -4,10 +4,10 @@ import scala.io.Source
 object Main extends App {
 
   val listofCountries = readCSV("data/countries.csv",Country.fromCSV)
-  listofCountries.foreach(println)
+  //listofCountries.foreach(println)
 
- //val listofAirports = readCSV("data/airports.csv", Airport.fromCSV)
- //listofAirports.foreach(println)
+ val listofAirports = readCSV("data/airports.csv", Airport.fromCSV)
+ listofAirports.foreach(println)
 //print(Country(12,"CDE","France","Europe","wiki_link","my_keyword"))
 
   def readCSV[T](fileName :String, 

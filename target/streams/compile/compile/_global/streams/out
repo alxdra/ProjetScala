@@ -1,2 +1,6 @@
+[0m[[0m[33mwarn[0m] [0m[0mC:\Users\alexa\Documents\EFREI\S9\Scala\ProjetScala\src\main\scala\Airport.scala:53:27: unreachable code[0m
+[0m[[0m[33mwarn[0m] [0m[0m                     Right(Airport(id, identity, airport_type,name, Some(latitude_deg), Some(longitude_deg), Some(elevation_ft),  continent, country, region, municipality, scheduled_service, gps, iata_code,[0m
+[0m[[0m[33mwarn[0m] [0m[0m                          ^[0m
+[0m[[0m[33mwarn[0m] [0m[0mone warning found[0m
 [0m[[0m[33mwarn[0m] [0m[0m1 deprecation (since 2.13.3); re-run with -deprecation for details[0m
 [0m[[0m[33mwarn[0m] [0m[0mone warning found[0m
