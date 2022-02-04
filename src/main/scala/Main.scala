@@ -2,11 +2,22 @@ import Point.fromCSV
 import scala.io.Source
 
 object Main extends App {
- // val listofpoint = readCSV("points.cvs", fromCSV)
- val listofCountries = readCSV("data/countries.csv",Country.fromCSV)
- listofCountries.foreach(println)
+/*
+  val listofCountries = readCSV("data/countries.csv",Country.fromCSV)
+  listofCountries.foreach(println)
+*/
 
-//print(Country(12,"CDE","France","Europe","wiki_link","my_keyword"))
+/*
+  val listofAirports = readCSV("data/airports.csv", Airport.fromCSV)
+  listofAirports.foreach(println)
+*/
+
+/*
+  val listofRunways = readCSV("data/runways.csv", Runway.fromCSV)
+  listofRunways.foreach(println)
+  print(Country(12,"CDE","France","Europe","wiki_link","my_keyword"))
+*/
+ 
 
   def readCSV[T](fileName :String, 
                 fonctionObject : Array[String]=> Either[String,T]
