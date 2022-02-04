@@ -27,6 +27,18 @@ version := "1.0"
 
 libraryDependencies += "org.scala-lang.modules" %% "scala-parser-combinators" % "1.1.2"
 
+
+//Database
+val DoobieVersion = "1.0.0-RC1"
+val NewTypeVersion = "0.4.4"
+
+libraryDependencies ++= Seq(
+  "org.tpolecat" %% "doobie-core"     % DoobieVersion,
+  "org.tpolecat" %% "doobie-postgres" % DoobieVersion,
+  "org.tpolecat" %% "doobie-hikari"   % DoobieVersion,
+  "io.estatico"  %% "newtype"         % NewTypeVersion
+)
+
 // Here, `libraryDependencies` is a set of dependencies, and by using `+=`,
 // we're adding the scala-parser-combinators dependency to the set of dependencies
 // that sbt will go and fetch when it starts up.
