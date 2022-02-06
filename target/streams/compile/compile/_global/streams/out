@@ -1,2 +1,4 @@
-[0m[[0m[33mwarn[0m] [0m[0m1 deprecation (since 2.13.3); re-run with -deprecation for details[0m
-[0m[[0m[33mwarn[0m] [0m[0mone warning found[0m
+[0m[[0m[31merror[0m] [0m[0mC:\Users\alexa\Documents\EFREI\S9\Scala\ProjetScala\src\main\scala\Main.scala:16:14: reassignment to val[0m
+[0m[[0m[31merror[0m] [0m[0m  c.airports = Some(c.addAirports(l))[0m
+[0m[[0m[31merror[0m] [0m[0m             ^[0m
+[0m[[0m[31merror[0m] [0m[0mone error found[0m

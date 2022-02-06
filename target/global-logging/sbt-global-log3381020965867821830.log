@@ -1,0 +1,22 @@
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(compile; run, Some(567fd14a-758a-41ad-ba18-2be2d4b1d7aa), Some(CommandSource(console0)))[0m
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(compile, None, Some(CommandSource(console0)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mEvaluating tasks: Compile / compile[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning task... Cancel: Signal, check cycles: false, forcegc: true[0m
+[0m[[0m[0minfo[0m] [0m[0mcompiling 2 Scala sources to C:\Users\alexa\Documents\EFREI\S9\Scala\ProjetScala\target\scala-2.13\classes ...[0m
+[0m[[0m[31merror[0m] [0m[0mC:\Users\alexa\Documents\EFREI\S9\Scala\ProjetScala\src\main\scala\Country.scala:33:53: type mismatch;[0m
+[0m[[0m[31merror[0m] [0m[0m found   : List[Airport][0m
+[0m[[0m[31merror[0m] [0m[0m required: Airport[0m
+[0m[[0m[31merror[0m] [0m[0m                        case code => addAirports(a, country_aiports :: List(x))[0m
+[0m[[0m[31merror[0m] [0m[0m                                                    ^[0m
+[0m[[0m[31merror[0m] [0m[0mC:\Users\alexa\Documents\EFREI\S9\Scala\ProjetScala\src\main\scala\Country.scala:34:35: type mismatch;[0m
+[0m[[0m[31merror[0m] [0m[0m found   : List[Airport][0m
+[0m[[0m[31merror[0m] [0m[0m required: Airport[0m
+[0m[[0m[31merror[0m] [0m[0m                        case _ => country_aiports[0m
+[0m[[0m[31merror[0m] [0m[0m                                  ^[0m
+[0m[[0m[31merror[0m] [0m[0mC:\Users\alexa\Documents\EFREI\S9\Scala\ProjetScala\src\main\scala\Main.scala:18:22: value addAirports is not a member of Product with java.io.Serializable[0m
+[0m[[0m[31merror[0m] [0m[0m  allCountries.map(_.addAirports(allAirports, Nil))[0m
+[0m[[0m[31merror[0m] [0m[0m                     ^[0m
+[0m[[0m[31merror[0m] [0m[0mthree errors found[0m
+[0m[[0m[31merror[0m] [0m[0m(Compile / [31mcompileIncremental[0m) Compilation failed[0m
+[0m[[0m[31merror[0m] [0m[0mTotal time: 0 s, completed 4 févr. 2022 15:03:53[0m
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(shell, None, None)[0m
