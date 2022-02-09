@@ -55,6 +55,35 @@ object Main extends App {
     bufferedSource.close
     return fileList
   }
+  
+  /**
+  
+  //test
+  scala.io.StdIn.readLine()
+  
+    def commandlineuser(Country, Airport, Runways) : Any = {
+    println("Que voulez-vous faire ?(entrez un numéro")
+    println("1. query")
+    println("2. reports")
+    scala.io.StdIn.readLine() match {
+      case "1" => commandlinequery(Country, Airport, Runways)
+      case "2" => commandlinereports(Country, Airport, Runways)
+      case _ => println("error")
+  }
+
+  def commandlinequery(Country, Airport, Runways) : Any = { 
+    println("Entrez un nom de pays ou code. Ex : 'Andorra' ou 'AD', 'France' ou 'FR' ")
+  }
+
+  def commandlinequery(Country, Airport, Runways) : Any = { 
+    println("1. 10 countries with highest number of airports (with count) and countries  with lowest number of airports.")
+    println("2. Type of runways per country")
+    println("3. The top 10 most common runway latitude")
+  }
+
+  
+**/
+  
 }
 
  
