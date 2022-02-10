@@ -12,17 +12,7 @@ object Main extends App {
         case Right(x)=>x 
       }
 
-  val c = "Th"
- val my_country = getCountry(c.toLowerCase.trim, allCountries).toSet
-  print( my_country.size match {
-   case 2 => my_country.collect{
-        case Right(x)=>x 
-      }
-   case 1 => my_country.collect{
-        case Left(x)=>x 
-      }
- })
-
+  displayAirports("th",allCountries, allAirports)
  
 /*
   val country_test = allCountries(4)
@@ -57,6 +47,7 @@ object Main extends App {
     return fileList
   }
 
+  
   def getCountry(country_in : String, countries: List[Country]) : List[Either[String,Country]]= {
     if(country_in.length == 2) 
       countries.map(country => country.code.toLowerCase.trim
@@ -71,6 +62,23 @@ object Main extends App {
                   case _ => Left("Can not find this country")
                 })
               } 
+
+  def displayAirports(input : String, countries : List[Country], airports : List[Airport])={
+    
+    val my_country = getCountry(input.toLowerCase.trim, allCountries).toSet
+
+    my_country.size match {
+    case 2 => my_country.collect{
+          case Right(x)=>x.findAirports(allAirports)
+                          .map(airport=> airport.name)
+                          .map(println)
+        }
+    case 1 => my_country.collect{
+          case Left(x)=>print(x)
+        }
+    } 
+  }
+
 }
 
  
