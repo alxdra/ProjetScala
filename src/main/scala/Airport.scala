@@ -20,7 +20,7 @@ case class Airport(  id : Int,
                 )
 
 object Airport{
-    def fromCSV[A](line : Array[String]): Either[String, Airport] = {
+    def fromCSV(line : Array[String]): Either[String, Airport] = {
             (Try(line(0).toInt).toOption,  
             line.lift(1), 
             line.lift(2), 

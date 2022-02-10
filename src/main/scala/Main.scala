@@ -2,34 +2,35 @@ import scala.io.Source
 import javax.management.monitor.CounterMonitor
 
 object Main extends App {
-
-  val a = Airport(12,"CDG","big","Don't Crash",None,None,None,None,"S",None, None, None, None, None, None, None, None,None)
-  val b = Airport(12,"CDG","big","Don't Crash",None,None,None,None,"O",None, None, None, None, None, None, None, None,None)
-  val l = List(a,b)
-  
-  val c = Country(1,
-                  "S",
-                  "Lalaland",
-                  "NeverLand",
-                   Nil,
-                   None)
-
-  
-  c.airports = Some(c.addAirports(l))
-  println(c.airports)
-
- /* val allCountries = readCSV("data/countries.csv",Country.fromCSV).colle
- ct{
-        case Right(x)=>x 
-        case Left(x)=>None
+  val allCountries = readCSV("data/countries.csv",Country.fromCSV).collect{
+        case Right(x)=>x
       }
   
-  allCountries.foreach(println)
+  //allCountries.foreach(println)
 
   val allAirports = readCSV("data/airports.csv", Airport.fromCSV).collect{
         case Right(x)=>x 
-        case Left(x)=>None
       }
+
+  val c = "Th"
+ val my_country = getCountry(c.toLowerCase.trim, allCountries).toSet
+  print( my_country.size match {
+   case 2 => my_country.collect{
+        case Right(x)=>x 
+      }
+   case 1 => my_country.collect{
+        case Left(x)=>x 
+      }
+ })
+
+ 
+/*
+  val country_test = allCountries(4)
+  val list_test = country_test.findAirports(allAirports)
+  println("Airports in ")
+  println(country_test.name)
+  list_test.foreach(println)*/
+
   //listofAirports.foreach(println)*/
 
  // allCountries(1).addAirports(allAirports, Nil)
@@ -55,6 +56,21 @@ object Main extends App {
     bufferedSource.close
     return fileList
   }
+
+  def getCountry(country_in : String, countries: List[Country]) : List[Either[String,Country]]= {
+    if(country_in.length == 2) 
+      countries.map(country => country.code.toLowerCase.trim
+                 match {
+                  case `country_in` => Right(country)
+                  case _ => Left("Can not find this country")
+                })
+    else
+       countries.map(country => country.name.toLowerCase.trim
+                 match {
+                  case `country_in` => Right(country)
+                  case _ => Left("Can not find this country")
+                })
+              } 
 }
 
  

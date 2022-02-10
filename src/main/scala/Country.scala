@@ -4,10 +4,10 @@ case class Country(id : Int, //Id_country,
              name : String,
              continent : String,
              keywords : List[String], //list
-             airports: Option[List[Airport]]
+           //  airports: Option[List[Airport]]
             ){
 
-        def addAirports(a : List[Airport]): List[Airport]={
+        def findAirports(a : List[Airport]): List[Airport]={
             a.foldLeft(List[Airport]())((list, currentAirport)=>{
                 currentAirport.iso_country 
                         match {
@@ -26,13 +26,13 @@ object Country  {
              match{
                 case (Some(id), Some(code), Some(name), Some(continent), Some(k1), Some(k2)) =>
                         //Right(Country(new Id_country(id),code, name, continent, wiki_link, List(k1,k2)))
-                        Right(Country(id,code, name, continent, List(k1,k2), None))
+                        Right(Country(id,code, name, continent, List(k1,k2)))
 
                 case (Some(id), Some(code), Some(name), Some(continent), Some(k1), None) =>
-                        Right(Country(id,code, name, continent, List(k1), None))
+                        Right(Country(id,code, name, continent, List(k1)))
 
                 case (Some(id), Some(code), Some(name), Some(continent), None, None) =>
-                        Right(Country(id,code, name, continent, Nil, None))
+                        Right(Country(id,code, name, continent, Nil))
 
                 case _ => Left("Error to build country")
             }
