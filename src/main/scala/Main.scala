@@ -14,7 +14,50 @@ object Main extends App {
         case Right(x)=>x 
       }
 
-              
+ 
+//MENU
+  commandlineuser(allAirports,allRunways,allCountries)
+
+  def commandlineuser(Airport : List[Airport] , Runways: List[Runway] , Country : List[Country]) : Any = {
+    println("------------------------------------------")
+    println("Que voulez-vous faire ?(entrez un numero")
+    println("1. query")
+    println("2. reports")
+    println("3. exit")
+    scala.io.StdIn.readLine() match {
+      case "1" => commandlinequery(allAirports,allRunways,allCountries)
+      case "2" => commandlinereports(allAirports,allRunways,allCountries)
+      case "3" => println("exit")
+      case _ => println("error")
+    }
+  }
+
+  def commandlinequery(Airport : List[Airport] , Runways: List[Runway] , Country : List[Country]) : Any = { 
+    println("Entrez un nom de pays ou code. Ex : 'Andorra' ou 'AD', 'France' ou 'FR' ")
+    displayAirports(scala.io.StdIn.readLine())
+    
+    commandlineuser(allAirports,allRunways,allCountries)
+
+  }
+
+  def commandlinereports(Airport : List[Airport] , Runways: List[Runway] , Country : List[Country]) : Any = { 
+    println("1. 10 countries with highest number of airports (with count) and countries  with lowest number of airports.")
+    println("2. Type of runways per country")
+    println("3. The top 10 most common runway latitude")
+
+    scala.io.StdIn.readLine() match {
+     //case "1" => 
+      //case "2" => 
+      case "3" => topCountries()
+      case _ => println("error")
+    }
+      commandlineuser(allAirports,allRunways,allCountries)
+
+  }
+  
+  
+  
+  
   displayAirports("France")
 
   def readCSV[T](fileName :String, 
@@ -71,33 +114,7 @@ object Main extends App {
   }
 
   
-  /**
-  
-  //test
-  scala.io.StdIn.readLine()
-  
-    def commandlineuser(Country, Airport, Runways) : Any = {
-    println("Que voulez-vous faire ?(entrez un numéro")
-    println("1. query")
-    println("2. reports")
-    scala.io.StdIn.readLine() match {
-      case "1" => commandlinequery(Country, Airport, Runways)
-      case "2" => commandlinereports(Country, Airport, Runways)
-      case _ => println("error")
-  }
-
-  def commandlinequery(Country, Airport, Runways) : Any = { 
-    println("Entrez un nom de pays ou code. Ex : 'Andorra' ou 'AD', 'France' ou 'FR' ")
-  }
-
-  def commandlinequery(Country, Airport, Runways) : Any = { 
-    println("1. 10 countries with highest number of airports (with count) and countries  with lowest number of airports.")
-    println("2. Type of runways per country")
-    println("3. The top 10 most common runway latitude")
-  }
-
-  
-**/
+ 
   
 
 }
