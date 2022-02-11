@@ -17,7 +17,18 @@ case class Airport(  id : Int,
                     home_link: Option[String],
                     wikipedia_link: Option[String],
                     keywords: Option[String]
-                )
+                ){
+
+    def findRunways(a : List[Runway]): List[Runway]={
+            a.foldLeft(List[Runway]())((list, currentRunway)=>{
+                currentRunway.airport_ident
+                        match {
+                        case `identity` => currentRunway :: list
+                        case _ => list
+                }
+            })
+        }
+}
 
 object Airport{
     def fromCSV(line : Array[String]): Either[String, Airport] = {
