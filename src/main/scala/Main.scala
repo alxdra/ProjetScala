@@ -2,41 +2,20 @@ import scala.io.Source
 import javax.management.monitor.CounterMonitor
 
 object Main extends App {
-
-  val a = Airport(12,"CDG","big","Don't Crash",None,None,None,None,"S",None, None, None, None, None, None, None, None,None)
-  val b = Airport(12,"CDG","big","Don't Crash",None,None,None,None,"O",None, None, None, None, None, None, None, None,None)
-  val l = List(a,b)
-  
-  val c = Country(1,
-                  "S",
-                  "Lalaland",
-                  "NeverLand",
-                   Nil,
-                   None)
-
-  
-  c.airports = Some(c.addAirports(l))
-  println(c.airports)
-
- /* val allCountries = readCSV("data/countries.csv",Country.fromCSV).colle
- ct{
-        case Right(x)=>x 
-        case Left(x)=>None
+  val allCountries = readCSV("data/countries.csv",Country.fromCSV).collect{
+        case Right(x)=>x
       }
   
-  allCountries.foreach(println)
-
   val allAirports = readCSV("data/airports.csv", Airport.fromCSV).collect{
         case Right(x)=>x 
-        case Left(x)=>None
       }
-  //listofAirports.foreach(println)*/
 
- // allCountries(1).addAirports(allAirports, Nil)
+  val allRunways = readCSV("data/runways.csv", Runway.fromCSV).collect{
+        case Right(x)=>x 
+      }
 
- //val listofRunways = readCSV("data/runways.csv", Runway.fromCSV)
- //listofRunways.foreach(println)
-//print(Country(12,"CDE","France","Europe","wiki_link","my_keyword"))
+              
+  displayAirports("France")
 
   def readCSV[T](fileName :String, 
                 fonctionObject : Array[String]=> Either[String,T], 
@@ -55,6 +34,42 @@ object Main extends App {
     bufferedSource.close
     return fileList
   }
+
+
+  
+  def getCountry(country_in : String) : List[Either[String,Country]]= {
+    if(country_in.length == 2) 
+      allCountries.map(country => country.code.toLowerCase.trim
+                 match {
+                  case `country_in` => Right(country)
+                  case _ => Left("Can not find this country")
+                })
+    else
+       allCountries.map(country => country.name.toLowerCase.trim
+                 match {
+                  case `country_in` => Right(country)
+                  case _ => Left("Can not find this country")
+                })
+              } 
+
+  def displayAirports(input : String)={
+    val my_country = getCountry(input.toLowerCase.trim).toSet
+
+    my_country.size match {
+    case 2 => my_country.collect{
+          case Right(x)=>x.findAirports(allAirports)
+                          .map(a=>
+                            (a.name,
+                            a.findRunways(allRunways)
+                              .map(runway => runway.id)))
+                          .map(println)
+        }
+    case 1 => my_country.collect{
+          case Left(x)=>print(x)
+        }
+    } 
+  }
+
   
   /**
   
@@ -84,6 +99,7 @@ object Main extends App {
   
 **/
   
+
 }
 
  

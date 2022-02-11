@@ -7,7 +7,7 @@ If you don't chose the database optional task, you're allowed to use mutables co
 C.2.1) You're program will be a command line program that will ask the user for two options - Query or Reports.
 C.2.2 Query Option will ask the user for the country name or code and display the airports & runways at each airport. The input can be country code or country name.
 C.2.3 Choosing Reports will display the following (possibly through a menu):
-• 10 countries with highest number of airports (with count) and countries  with lowest number of airports.
+• 10 countries with highest number of airports (with count) and countries with lowest number of airports.
 • Type of runways (as indicated in "surface" column) per country
 • The top 10 most common runway latitude (indicated in "le_ident" column)
 
