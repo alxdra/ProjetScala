@@ -80,43 +80,62 @@ object Main extends App {
 
 
   
-  def getCountry(country_in : String) : List[Either[String,Country]]= {
-    if(country_in.length == 2) 
-      allCountries.map(country => country.code.toLowerCase.trim
-                 match {
-                  case `country_in` => Right(country)
-                  case _ => Left("Can not find this country")
-                })
-    else
-       allCountries.map(country => country.name.toLowerCase.trim
-                 match {
-                  case `country_in` => Right(country)
-                  case _ => Left("Can not find this country")
-                })
-              } 
+  
+  def getCountry(country_in : String) : Either[String,Country]= {
+    if(country_in.length == 2) {
+      allCountries.dropWhile( _.code
+                               .toLowerCase
+                               .trim != `country_in`)
+                  .take(1) match{
+                              case x if(x.length == 1) => Right(x.head)
+                              case Nil => Left("Can not find this country")
+                  }
+    }
+    else{
+       allCountries.dropWhile( _.name
+                                .toLowerCase
+                                .trim
+                                .containsSlice(`country_in`) !=true)
+                    .take(1) match{
+                        case x if(x.length == 1) => Right(x.head)
+                        case Nil => Left("Can not find this country")
+                    }
+      }
+    }
+  
 
-  def displayAirports(input : String)={
-    val my_country = getCountry(input.toLowerCase.trim).toSet
-
-    my_country.size match {
-    case 2 => my_country.collect{
-          case Right(x)=>x.findAirports(allAirports)
-                          .map(a=>
-                            (a.name,
-                            a.findRunways(allRunways)
-                              .map(runway => runway.id)))
-                          .map(println)
-        }
-    case 1 => my_country.collect{
-          case Left(x)=>print(x)
-        }
+ def displayAirports(input : String)={
+    val my_country = getCountry(input.toLowerCase.trim)
+    my_country match {
+      case Right(x) => x.findAirports(allAirports)
+                        .map(a=>
+                            ( a.name,
+                              a.findRunways(allRunways)
+                               .map(runway => runway.id)))
+                        .map(println)
+        case Left(x)=>print(x)        
     } 
   }
-
   
- 
-  
+  def topCountries()={
+    allCountries.map(country =>  (country.name,country.findAirports(allAirports).length))
+                      .sortBy(x => x._2)
+                      .takeRight(10)
+                      .map(println)                     
+  }
+  def lowCountries()={
+    allCountries.map(country =>  (country.name,country.findAirports(allAirports).length))
+                      .sortBy(x => x._2)
+                      .take(10)
+                      .map(println)                     
+  }
 
+  def commonLatitud()={
+    allRunways.map(r => r.le_ident)
+              .groupBy(l=>l)
+              .map(t=> (t._1, t._2.length))
+              .map(println)
+  }
 }
 
  
