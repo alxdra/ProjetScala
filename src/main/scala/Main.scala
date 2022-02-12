@@ -46,9 +46,9 @@ object Main extends App {
     println("3. The top 10 most common runway latitude")
 
     scala.io.StdIn.readLine() match {
-     //case "1" => 
-      //case "2" => 
-      case "3" => topCountries()
+      case "1" => topCountries()
+      case "2" => typeRunways()
+      case "3" => commonLatitud()
       case _ => println("error")
     }
       commandlineuser(allAirports,allRunways,allCountries)
@@ -56,9 +56,7 @@ object Main extends App {
   }
   
   
-  
-  
-  displayAirports("France")
+
 
   def readCSV[T](fileName :String, 
                 fonctionObject : Array[String]=> Either[String,T], 
@@ -136,6 +134,17 @@ object Main extends App {
               .map(t=> (t._1, t._2.length))
               .map(println)
   }
+  
+  def typeRunways()={
+
+    allCountries.map(c=> (c.name, c.findAirports(allAirports)
+                          .map(a=>
+                            a.findRunways(allRunways)
+                              .map(runway => runway.surface))))
+                          .map(println) 
+  }
+  
+  
 }
 
  
